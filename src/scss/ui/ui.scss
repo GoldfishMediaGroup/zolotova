@@ -1,0 +1,112 @@
+// typography
+@import './typo';
+@import './buttons';
+@import './form';
+@import './fancybox';
+
+.section-wrap {
+    width: 1920rem;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+// .breadcrumbs {
+//   position: relative;
+//   z-index: 5;
+//   // .breadcrumbs__list
+
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//     gap: 8rem;
+//     width: 100%;
+//     @include small-tablet {
+//       gap: 4rem;
+//     }
+//   }
+
+//   // .breadcrumbs__link
+
+//   & li {
+//     display: flex;
+//     align-items: center;
+//     gap: 8rem;
+//     color: $text-secondary;
+//     white-space: nowrap;
+//     &:not(:last-child)::after {
+//       display: inline-block;
+//       content: '';
+//       width: 20rem;
+//       height: 20rem;
+//       background: no-repeat center/contain
+//         url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='9' y='4' width='2' height='12' fill='%23FFC458'/%3E%3C/svg%3E");
+//     }
+//     &:last-child {
+//       color: $text-primary;
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+//       width: 100%;
+//       flex-shrink: 1;
+//       & p {
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         width: 100%;
+//       }
+//     }
+
+//     @include small-tablet {
+//       gap: 4rem;
+//     }
+//   }
+// }
+
+// .swiper-pagination {
+//   @include desk-only {
+//     display: none;
+//   }
+//   position: static !important;
+//   & .swiper-pagination-bullet {
+//     transition: all 0.3s !important;
+//     background: $tertiary-text;
+//   }
+//   & .swiper-pagination-bullet-active {
+//     background: $text-primary;
+//   }
+// }
+
+// .swiper-btn-box {
+//   display: flex;
+//   gap: 16rem;
+//   @include small-tablet {
+//     display: none;
+//   }
+//   & .swiper-button-next,
+//   & .swiper-button-prev {
+//     position: static !important;
+//     margin: 0 !important;
+//     width: 40rem !important;
+//     height: 40rem !important;
+
+//     &:after {
+//       display: none;
+//     }
+//     &:hover {
+//       & svg path {
+//         fill: $accent;
+//       }
+//     }
+//     & svg {
+//       width: 100% !important;
+//       height: 100% !important;
+//       object-fit: cover;
+//       transition: transform 0.3s;
+//       & path {
+//         transition: fill 0.3s;
+//       }
+//     }
+//   }
+// }
+
+

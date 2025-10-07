@@ -1,0 +1,114 @@
+.h1 {
+  font-weight: 500;
+  font-size: 120rem;
+  line-height: 90%;
+  text-transform: uppercase;
+  font-family: 'Akzidenz';
+  @include small-tablet {
+    font-size: 52rem;
+    line-height: 100%;
+  }
+}
+.h2 {
+  font-weight: 500;
+  font-size: 110rem;
+  line-height: 100%;
+  font-family: 'Akzidenz';
+  @include small-tablet {
+    font-size: 52rem;
+  }
+}
+.h4 {
+  font-weight: 500;
+  font-size: 36rem;
+  line-height: 100%;
+  font-family: 'Akzidenz';
+  @include small-tablet {
+    font-size: 28rem;
+  }
+}
+
+.h5 {
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 100%;
+  font-family: 'Akzidenz';
+  @include small-tablet {
+    font-size: 22rem;
+  }
+}
+
+.txt20 {
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 130%;
+  @include small-tablet {
+    font-size: 16rem;
+  }
+}
+
+.txt18 {
+  font-weight: 600;
+  font-size: 18rem;
+  line-height: 130%;
+  @include small-tablet {
+    font-size: 14rem;
+  }
+}
+.txt16 {
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 130%;
+  @include small-tablet {
+    font-size: 14rem;
+  }
+}
+
+.num {
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 100%;
+  font-family: 'FF';
+  @include small-tablet {
+    font-size: 14rem;
+  }
+}
+.light {
+  font-weight: 300 !important;
+}
+.regular {
+  font-weight: 400 !important;
+}
+.medium {
+  font-weight: 500 !important;
+}
+.semibold {
+  font-weight: 600 !important;
+}
+.bold {
+  font-weight: 700 !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+
+.lh140 {
+  line-height: 140%;
+}
