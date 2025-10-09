@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <div class="consultation__wrap"></div>
+        <section class="consultation _first">
+          <div class="consultation__container container">
+            <div class="consultation__inner flex dc">
+              <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list txt16">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><p>Консультация в клинике</p></li>
+                </ul>
+              </nav>
+              <div class="consultation__content flex dc">
+                <div class="consultation__head flex dc">
+                  <a href="#" class="consultation__back">
+                    <div class="consultation__back-svg">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20.4857 12.7489L21.2357 12.7489L21.2357 11.2489L20.4857 11.2489L20.4857 11.9989L20.4857 12.7489ZM4.57581 11.2489C4.1616 11.2489 3.82581 11.5847 3.82581 11.9989C3.82581 12.4131 4.1616 12.7489 4.57581 12.7489L4.57581 11.9989L4.57581 11.2489ZM20.4857 11.9989L20.4857 11.2489H4.57581L4.57581 11.9989L4.57581 12.7489H20.4857L20.4857 11.9989Z"
+                          fill="#393C43"
+                        />
+                        <path
+                          d="M10.4097 18.8931L3.51538 11.9988L10.4097 5.10449"
+                          stroke="#393C43"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <p class="txt14">Назад</p>
+                  </a>
+
+                  <p class="consultation__title h1">Консультация в клинике</p>
+                </div>
+
+                <div class="consultation__info flex dc">
+                  <div class="consultation__list-box flex dc">
+                    <p class="txt20 semibold">Что входит:</p>
+                    <ul class="consultation__list txt20">
+                      <li class="consultation__item">Подробное обсуждение жалоб, анамнеза, динамики состояния</li>
+                      <li class="consultation__item">Изучение результатов ранее пройденных обследований</li>
+                      <li class="consultation__item">Осмотр и оценка состава тела (биоимпедансометрия) по показаниям</li>
+                      <li class="consultation__item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                      <li class="consultation__item">Назначение лечения </li>
+                    </ul>
+                  </div>
+
+                  <div class="consultation__important flex dc">
+                    <p class="h4">Важно!</p>
+                    <ul class="consultation__list txt20">
+                      <li class="consultation__item">Запись осуществляется заранее через сайт клиники</li>
+                      <li class="consultation__item">Время приема регламентировано - 30 минут</li>
+                      <li class="consultation__item">
+                        Возможность в Клинике сразу сдать анализы и пройти дообследование, в т. ч. у смежных специалистов
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="consultation__footer flex cv sb">
+            <div class="consultation__price-box flex dc">
+              <p class="number">2900/2700₽</p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="fill"
+                    d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z"
+                    fill="#393C43"
+                  />
+                  <path
+                    class="stroke"
+                    d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917"
+                    stroke="#393C43"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

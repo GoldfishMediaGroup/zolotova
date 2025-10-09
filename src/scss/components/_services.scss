@@ -1,0 +1,204 @@
+.services {
+  @include desk-only {
+    background: url(./assets/images/servicesBg.webp) no-repeat top/cover;
+  }
+  @include small-tablet {
+  }
+  /* .services__container */
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .services__inner */
+
+  &__inner {
+  }
+
+  /* .services__content */
+
+  &__content {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  /* .services__head */
+
+  &__head {
+    width: 739rem;
+    gap: 12rem;
+    @include small-tablet {
+      width: 100%;
+      gap: 16rem;
+    }
+  }
+
+  /* .services__list */
+
+  &__list {
+    gap: 20rem;
+    @include small-tablet {
+      gap: 12rem;
+      flex-direction: column;
+    }
+  }
+
+  /* .services__item */
+
+  &__item {
+    width: 346rem;
+    position: relative;
+    @include small-tablet {
+      width: 100%;
+    }
+
+    &--dark {
+      width: 436rem;
+      @include small-tablet {
+        width: 100%;
+      }
+      & .services__item-inner {
+        color: $white;
+        background: url(./assets/images/servicesMaskDark.svg) no-repeat bottom/contain;
+        @include small-tablet {
+          background: url(./assets/images/servicesMaskDarkMob.svg) no-repeat bottom/contain;
+        }
+        &::before {
+          background: $black;
+        }
+        & .services__item-num {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  /* .services__item-inner */
+
+  &__item-inner {
+    gap: 38rem;
+    height: 100%;
+    padding: 24rem;
+    color: $black;
+    min-height: 541rem;
+    border-radius: 32rem 32rem 0 0;
+    overflow: hidden;
+    background: url(./assets/images/servicesMask.svg) no-repeat bottom/contain;
+    @include small-tablet {
+      min-height: 445rem;
+      padding: 20rem 16rem;
+      border-radius: 12rem 12rem 0 0;
+      background: url(./assets/images/servicesMaskMob.svg) no-repeat bottom/contain;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 400rem;
+      left: 0;
+      right: 0;
+      background: $white;
+      border-radius: inherit;
+    }
+  }
+
+  /* .services__item-content */
+
+  &__item-content {
+    gap: 24rem;
+    position: relative;
+    z-index: 2;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  /* .services__item-head */
+
+  &__item-head {
+    & .h4 {
+      width: min-content;
+    }
+  }
+
+  /* .services__item-num */
+
+  &__item-num {
+    color: $black-500;
+  }
+
+  /* .services__list-box */
+
+  &__list-box {
+    gap: 8rem;
+  }
+  /* .services__inner-list */
+
+  &__inner-list {
+    gap: 4rem;
+    list-style: disc;
+    padding-left: 30rem;
+    @include small-tablet {
+      font-size: 16rem;
+    }
+  }
+  /* .services__list-item */
+
+  &__list-item {
+    gap: 8rem;
+    list-style: disc;
+  }
+
+  /* .services__item-price */
+
+  &__item-price {
+  }
+
+  /* .services__item-btn */
+
+  &__item-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65rem;
+    height: 65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    border-radius: 50%;
+    @include small-tablet {
+      width: 52rem;
+      height: 52rem;
+    }
+    & img {
+      width: 32rem;
+      height: 32rem;
+      @include small-tablet {
+        width: 24rem;
+        height: 24rem;
+      }
+    }
+  }
+
+  /* .services__item--dark */
+
+  &__item--dark {
+  }
+
+  /* .services__photo */
+
+  &__photo {
+    position: absolute;
+    width: 930rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @include small-tablet {
+      display: none;
+    }
+  }
+}

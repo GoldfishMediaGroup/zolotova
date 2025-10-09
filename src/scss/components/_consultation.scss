@@ -1,0 +1,109 @@
+.consultation {
+  /* .consultation__container */
+
+  &__container {
+  }
+
+  /* .consultation__inner */
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+  }
+
+  /* .consultation__content */
+
+  &__content {
+    gap: 24rem;
+  }
+
+  /* .consultation__head */
+
+  &__head {
+    gap: 12rem;
+  }
+
+  /* .consultation__back */
+
+  &__back {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* .consultation__back-svg */
+
+  &__back-svg {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  /* .consultation__title */
+
+  &__title {
+  }
+
+  /* .consultation__info */
+
+  &__info {
+    gap: 20rem;
+    border-radius: 12rem;
+    padding: 12rem;
+    background: $white;
+    width: 50%;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  /* .consultation__list-box */
+
+  &__list-box {
+    gap: 8rem;
+  }
+
+  /* .consultation__list */
+
+  &__list {
+    list-style: disc;
+    padding-left: 30rem;
+  }
+
+  /* .consultation__item */
+
+  &__item {
+    list-style: disc;
+  }
+
+  /* .consultation__important */
+
+  &__important {
+    padding: 20rem;
+    border-radius: 20rem;
+    background: $gray;
+    gap: 12rem;
+    @include small-tablet {
+      padding: 12rem;
+      border-radius: 16rem;
+      gap: 8rem;
+    }
+  }
+
+  /* .consultation__footer */
+
+  &__footer {
+    position: fixed;
+    background: $white;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 16rem 8rem;
+    z-index: 5;
+  }
+
+  /* .consultation__price-box */
+
+  &__price-box {
+  }
+}

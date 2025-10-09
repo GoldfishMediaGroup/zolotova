@@ -1,0 +1,133 @@
+.education {
+  /* .education__container */
+
+  &__container {
+  }
+
+  /* .education__inner */
+
+  &__inner {
+    gap: 40rem;
+  }
+
+  /* .education__head */
+
+  &__head {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 16rem;
+    }
+  }
+
+  /* .education__swiper-box */
+
+  &__swiper-box {
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  /* .education__swiper */
+
+  &__swiper {
+  }
+
+  /* .education__swiper-wrapper */
+
+  &__swiper-wrapper {
+  }
+
+  /* .education__slide */
+
+  &__slide {
+    height: auto !important;
+  }
+
+  /* .education__slide-inner */
+
+  &__slide-inner {
+    padding: 24rem 20rem;
+    border-radius: 16rem;
+    gap: 32rem;
+    background: $white;
+    height: 100%;
+    min-height: 516rem;
+    @include small-tablet {
+      min-height: unset;
+      padding: 20rem 12rem;
+      border-radius: 12rem;
+      gap: 12rem;
+    }
+  }
+
+  /* .education__list */
+
+  &__list {
+    gap: 32rem;
+    position: relative;
+    @include small-tablet {
+      gap: 8rem;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: '0';
+      left: 13rem;
+      width: 2rem;
+      background: $black;
+      opacity: 0.2;
+      @include small-tablet {
+        left: 10rem;
+      }
+    }
+  }
+
+  /* .education__item */
+
+  &__item {
+    gap: 16rem;
+    padding: 8rem 0;
+    position: relative;
+    z-index: 2;
+    @include small-tablet {
+      gap: 12rem;
+    }
+  }
+
+  /* .education__item-svg */
+
+  &__item-svg {
+    width: 28rem;
+    height: 28rem;
+    flex-shrink: 0;
+    background: $white;
+    @include small-tablet {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  /* .education__btn-box */
+
+  &__btn-box {
+  }
+
+  /* .education__btn */
+
+  &__btn {
+  }
+
+  /* .education__btn--prev */
+
+  &__btn--prev {
+  }
+
+  /* .education__btn-next */
+
+  &__btn-next {
+  }
+}

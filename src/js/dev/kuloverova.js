@@ -11,9 +11,13 @@ import scroll from '../utils/scroll';
 import fancybox from '../utils/fancybox';
 
 import smoothScroll from '../components/smoothScroll';
-// import headerBurger from '../components/headerBurger';
+import headerBurger from '../components/headerBurger';
 import footerCookieDisclamer from '../components/footerCookieDisclamer';
-
+import about from '../components/about';
+import hero from '../components/hero';
+import way from '../components/way';
+import services from '../components/services';
+import education from '../components/education';
 
 import '../libs/dynamic_adapt';
 
@@ -32,5 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
   fancybox();
   footerCookieDisclamer();
   smoothScroll();
-
+  headerBurger();
+  about();
+  hero();
+  way();
+  services();
+  education();
 });

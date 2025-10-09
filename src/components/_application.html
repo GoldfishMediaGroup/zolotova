@@ -1,0 +1,95 @@
+<section class="application">
+  <div class="application__bg">
+    <img src="./assets/images/applicationBg.webp" alt="" />
+  </div>
+  <div class="application__container container">
+    <div class="application__inner flex dc">
+      <p class="application__title h2">онлайн запись</p>
+      <form class="application__form form flex dc" data-popup-message="#popup__success" data-dev action="">
+        <p class="form__title txt20">Заполните форму и я свяжусь с вами, чтобы помочь выбрать удобное время для консультации.</p>
+
+        <div class="form__content">
+          <div class="form__input-box flex dc">
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="input--name form__input txt20"
+                  type="text"
+                  data-validate
+                  data-required="name"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="Введите ваше имя"
+                />
+                <span class="form__placeholder txt16">Имя</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="input--tel phone-mask form__input txt20"
+                  type="text"
+                  data-validate
+                  data-required="tel"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="+7 (9 _ _) _ _ _ - _ _ - _ _"
+                />
+
+                <span class="form__placeholder txt16">Номер телефона</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input
+                  class="input--mail form__input txt20"
+                  type="text"
+                  data-validate
+                  data-required="email"
+                  autocomplete="off"
+                  name="form[]"
+                  placeholder="Введите адрес электронной почты"
+                />
+                <span class="form__placeholder txt16">Электронная почта</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+          </div>
+          <div class="form__btn-box">
+            <label class="form__check-label">
+              <input type="checkbox" />
+              <span class="form__check-square"></span>
+              <span class="txt14 lh140 light tertiary-color">
+                Соглашаюсь на Обработку персональных данных и принимаю Условия
+                <a href="">политики конфиденциальности</a>
+              </span>
+            </label>
+
+            <button class="btn-arr btn-arr--black" disabled type="submit">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="fill"
+                    d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z"
+                    fill="#393C43"
+                  />
+                  <path
+                    class="stroke"
+                    d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917"
+                    stroke="#393C43"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

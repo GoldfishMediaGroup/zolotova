@@ -9,9 +9,9 @@ body::before {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s ease 0s;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  background: rgba(11, 42, 52, 0.4);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background: $black-500;
 }
 .popup-show body::before {
   opacity: 1;
@@ -62,15 +62,14 @@ body::before {
 
   &__content {
     width: 100%;
-    max-width: fit-content;
     border-radius: 40rem;
     visibility: hidden;
     transform: scale(0);
     transition: transform 0.6s ease 0s;
     position: relative;
-    max-width: 766rem;
+    width: 858rem;
     @include small-tablet {
-      max-width: none;
+      width: 100%;
     }
     .lock & {
       visibility: visible;
@@ -81,9 +80,12 @@ body::before {
 
   &__body {
     display: flex;
-    // background-color: $primary-bg;
-    padding: 60rem;
+    background-color: $white;
+    border-radius: 28rem;
+    padding: 48rem 52rem;
     @include small-tablet {
+      padding: 20rem 12rem;
+      border-radius: 12rem;
     }
   }
 
@@ -91,31 +93,166 @@ body::before {
 
   &__close-btn {
     position: absolute;
-    width: 40rem;
-    height: 40rem;
-    top: 32rem;
-    right: 32rem;
+    width: 54rem;
+    height: 54rem;
+    top: 40rem;
+    right: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     z-index: 2;
     & svg {
-      width: 100%;
-      height: 100%;
+      width: 34rem;
+      height: 34rem;
       object-fit: contain;
       pointer-events: none;
       @include small-tablet {
-        width: 24rem;
-        height: 24rem;
+        width: 18rem;
+        height: 18rem;
       }
     }
 
     @include small-tablet {
-      top: 8rem;
-      right: 8rem;
+      top: 10rem;
+      right: 5rem;
+      width: 38rem;
+      height: 35rem;
     }
   }
 
+  & .h2 {
+    @include small-tablet {
+      font-size: 40rem;
+    }
+  }
 
+  &--success {
+    & .popup__body-content {
+      gap: 40rem;
+      @include small-tablet {
+        gap: 24rem;
+      }
+    }
+    & .popup__body-text {
+      gap: 12rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+    }
+  }
+
+  &--application {
+    & .popup__body-content {
+      gap: 12rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+    }
+    & .popup__body-text {
+    }
+  }
+
+  &--illness {
+    & .popup__body-info {
+      gap: 24rem;
+    }
+
+    & .popup__body-img {
+      width: 257rem;
+      height: auto;
+      border-radius: 20rem;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+      @include small-tablet {
+        width: 100%;
+        height: 203rem;
+        border-radius: 8rem;
+      }
+      & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    & .popup__body-content {
+      gap: 32rem;
+
+      @include small-tablet {
+        gap: 20rem;
+      }
+    }
+    & .popup__body-text {
+      gap: 20rem;
+      & .h3 {
+        margin-right: 50rem;
+      }
+      @include small-tablet {
+        gap: 12rem;
+      }
+    }
+  }
+
+  &--consultation {
+    & .popup__body-info {
+      gap: 32rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+    }
+
+    & .popup__body-content {
+      gap: 20rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+    }
+
+    & .popup__info-wrap {
+      gap: 24rem;
+      @include small-tablet {
+        gap: 16rem;
+  
+      }
+    }
+
+    & .popup__list-box {
+      gap: 8rem;
+    }
+
+    & .popup__list {
+      list-style: disc;
+      padding-left: 30rem;
+    }
+
+    & .popup__item {
+      list-style: disc;
+    }
+
+    & .popup__important {
+      padding: 20rem;
+      border-radius: 20rem;
+      background: $gray;
+      gap: 12rem;
+      @include small-tablet {
+        padding: 12rem;
+        border-radius: 16rem;
+        gap: 8rem;
+      }
+    }
+
+    & .popup__footer {
+      gap: 16rem;
+      @include small-tablet {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    & .popup__price-box {
+    }
+  }
 }

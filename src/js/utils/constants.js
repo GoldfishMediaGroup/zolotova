@@ -15,13 +15,13 @@ export let bodyUnlock = (delay = 500) => {
   let body = document.querySelector('body');
   const cookie = document.querySelector('.cookie');
   const disclaimer = document.querySelector('.disclaimer');
+  const header = document.querySelector('.header');
   if (bodyLockStatus) {
     setTimeout(() => {
       body.style.paddingRight = '0px';
-      document.querySelector('.header').style.paddingRight = '0px';
-      // document.querySelector('header').style.paddingRight = '0px';
-      if (cookie) document.querySelector('.cookie').style.paddingRight = '0px';
-      if (disclaimer) document.querySelector('.disclaimer').style.paddingRight = '0px';
+      if(header) header.style.paddingRight = '0px';
+      if (cookie) cookie.style.marginRight = '0px';
+      if (disclaimer) disclaimer.style.paddingRight = '0px';
       document.documentElement.classList.remove('lock');
     }, delay);
     bodyLockStatus = false;
@@ -37,14 +37,13 @@ export let bodyLock = (delay = 500) => {
   let body = document.querySelector('body');
   const cookie = document.querySelector('.cookie');
   const disclaimer = document.querySelector('.disclaimer');
+    const header = document.querySelector('.header');
   const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;
   if (bodyLockStatus) {
     let scrollWith = getScrollbarWidth();
     body.style.paddingRight = `${scrollWith}px`;
-    document.querySelector('.header').style.paddingRight = `${scrollWith}px`;
-    // document.querySelector('header').style.paddingRight = `${scrollWith}px`;
-
-    if (cookie) cookie.style.paddingRight = `${scrollWith}px`;
+    if(header) header.style.paddingRight = `${scrollWith}px`;
+    if (cookie) cookie.style.marginRight = `${scrollWith}px`;
     if (disclaimer) disclaimer.style.paddingRight = `${scrollWith}px`;
     document.documentElement.classList.add('lock');
     if (lenis && typeof lenis.stop === 'function') {

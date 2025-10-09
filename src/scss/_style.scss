@@ -8,8 +8,7 @@ $white-200: rgba(255, 255, 255, 0.2);
 $gray: #e8e8e8;
 $gray-txt: #74777b;
 $gray-light: #f5f5f5;
-$btn-gray:  #d9d9d9;
-
+$btn-gray: #d9d9d9;
 
 @include desk-only {
   html.lenis,
@@ -67,9 +66,25 @@ body {
 main {
   flex-grow: 1;
   section {
-    margin: 20rem 0;
+    margin: 20rem auto;
+    width: 1880rem;
+    padding: 52rem 0;
+    background: $gray;
+    border-radius: 40rem;
+    position: relative;
+    overflow: hidden;
+    &._first {
+      padding-top: 144rem;
+      @include small-tablet {
+        padding-top: 84rem;
+      }
+    }
+
     @include small-tablet {
-      padding: 12rem 0;
+      border-radius: 20rem;
+      margin: 12rem auto;
+      width: 359rem;
+      padding: 20rem 0;
     }
   }
 }
