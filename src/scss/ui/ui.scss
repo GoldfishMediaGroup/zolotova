@@ -5,108 +5,180 @@
 @import './fancybox';
 
 .section-wrap {
-    width: 1920rem;
+  width: 1920rem;
   margin: 0 auto;
   overflow: hidden;
   max-width: 100%;
 }
 
+.logo {
+  border-radius: 60rem;
+  width: 256rem;
+  height: 72rem;
+  font-weight: 500;
+  font-size: 40rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'FF';
 
-// .breadcrumbs {
-//   position: relative;
-//   z-index: 5;
-//   // .breadcrumbs__list
+  @include small-tablet {
+    width: 140rem;
+    height: 52rem;
+    font-size: 26rem;
+  }
+}
 
-//   &__list {
-//     display: flex;
-//     align-items: center;
-//     gap: 8rem;
-//     width: 100%;
-//     @include small-tablet {
-//       gap: 4rem;
-//     }
-//   }
+.socials {
+  gap: 12rem;
+  @include small-tablet {
+    gap: 8rem;
+  }
 
-//   // .breadcrumbs__link
+  /* .socials__social */
 
-//   & li {
-//     display: flex;
-//     align-items: center;
-//     gap: 8rem;
-//     color: $text-secondary;
-//     white-space: nowrap;
-//     &:not(:last-child)::after {
-//       display: inline-block;
-//       content: '';
-//       width: 20rem;
-//       height: 20rem;
-//       background: no-repeat center/contain
-//         url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='9' y='4' width='2' height='12' fill='%23FFC458'/%3E%3C/svg%3E");
-//     }
-//     &:last-child {
-//       color: $text-primary;
-//       text-overflow: ellipsis;
-//       overflow: hidden;
-//       width: 100%;
-//       flex-shrink: 1;
-//       & p {
-//         text-overflow: ellipsis;
-//         overflow: hidden;
-//         width: 100%;
-//       }
-//     }
+  &__social {
+    width: 73rem;
+    height: 72rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 52rem;
+      height: 52rem;
+    }
+  }
 
-//     @include small-tablet {
-//       gap: 4rem;
-//     }
-//   }
-// }
+  /* .socials__social-svg */
 
-// .swiper-pagination {
-//   @include desk-only {
-//     display: none;
-//   }
-//   position: static !important;
-//   & .swiper-pagination-bullet {
-//     transition: all 0.3s !important;
-//     background: $tertiary-text;
-//   }
-//   & .swiper-pagination-bullet-active {
-//     background: $text-primary;
-//   }
-// }
+  &__social-svg {
+    width: 45rem;
+    height: 45rem;
+    @include small-tablet {
+      width: 24rem;
+      height: 24rem;
+    }
+  }
+}
 
-// .swiper-btn-box {
-//   display: flex;
-//   gap: 16rem;
-//   @include small-tablet {
-//     display: none;
-//   }
-//   & .swiper-button-next,
-//   & .swiper-button-prev {
-//     position: static !important;
-//     margin: 0 !important;
-//     width: 40rem !important;
-//     height: 40rem !important;
+.breadcrumbs {
+  position: relative;
+  z-index: 5;
+  // .breadcrumbs__list
 
-//     &:after {
-//       display: none;
-//     }
-//     &:hover {
-//       & svg path {
-//         fill: $accent;
-//       }
-//     }
-//     & svg {
-//       width: 100% !important;
-//       height: 100% !important;
-//       object-fit: cover;
-//       transition: transform 0.3s;
-//       & path {
-//         transition: fill 0.3s;
-//       }
-//     }
-//   }
-// }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    width: 100%;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
 
+  // .breadcrumbs__link
 
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    color: $gray-txt;
+    white-space: nowrap;
+    &:not(:last-child)::after {
+      display: inline-block;
+      content: '';
+      width: 4rem;
+      height: 4rem;
+      background: no-repeat center/contain
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='4' viewBox='0 0 3 4' fill='none'><circle cx='1.5' cy='1.5' r='1.5' transform='matrix(-1 0 0 1 3 0.5)' fill='%2374777B'/></svg>");
+    }
+    &:last-child {
+      color: $black;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      flex-shrink: 1;
+      & p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+}
+
+.swiper-pagination {
+  @include desk-only {
+    display: none;
+  }
+  position: static !important;
+  & .swiper-pagination-bullet {
+    transition: all 0.3s !important;
+    background: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 1 !important;
+  }
+  & .swiper-pagination-bullet-active {
+    background: $white;
+  }
+}
+
+.swiper-btn-box {
+  display: flex;
+  gap: 20rem;
+  @include small-tablet {
+    gap: 12rem;
+    align-self: center;
+  }
+  & .swiper-button-next,
+  & .swiper-button-prev {
+    position: relative !important;
+    inset: 0!important;
+    margin: 0 !important;
+    width: 65rem !important;
+    height: 65rem !important;
+
+    background: $black;
+    transition: background 0.3s !important;
+    opacity: 1 !important;
+    border-radius: 50%;
+    @include small-tablet {
+      width: 52rem !important;
+      height: 52rem !important;
+    }
+    &:after {
+      display: none;
+    }
+    &.swiper-button-disabled {
+      background: #cccdce;
+    }
+
+    & svg {
+      width: 32rem !important;
+      height: 32rem !important;
+      object-fit: cover;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include small-tablet {
+        width: 24rem !important;
+        height: 24rem !important;
+      }
+      & path {
+        transition: fill 0.3s;
+      }
+    }
+  }
+}

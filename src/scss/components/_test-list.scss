@@ -1,0 +1,194 @@
+.test-list {
+  /* .test-list__container */
+
+  &__container {
+  }
+
+  /* .test-list__inner */
+
+  &__inner {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  /* .test-list__content */
+
+  &__content {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  /* .test-list__head */
+
+  &__head {
+    gap: 40rem;
+    width: 858rem;
+    @include small-tablet {
+      gap: 20rem;
+      width: 100%;
+    }
+  }
+
+  /* .test-list__important */
+
+  &__important {
+    gap: 10rem;
+    padding: 12rem;
+    align-self: flex-end;
+    border-radius: 20rem;
+    background: $gray-light;
+    @include small-tablet {
+      padding: 8rem;
+      flex-direction: column;
+      border-radius: 12rem;
+    }
+  }
+
+  /* .test-list__important-svg */
+
+  &__important-svg {
+    width: 36rem;
+    height: 36rem;
+    flex-shrink: 0;
+  }
+
+  /* .test-list__list-wrap */
+
+  &__list-wrap {
+    gap: 40rem;
+    align-items: center;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  /* .test-list__list */
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+
+  /* .test-list__item */
+
+  &__item {
+    position: relative;
+    min-height: 260rem;
+    gap: 38rem;
+    height: 100%;
+    padding: 24rem;
+    border-radius: 32rem 32rem 0 0;
+    overflow: hidden;
+    background: url(./assets/images/testMask.svg) no-repeat bottom/contain;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 74rem;
+    @include small-tablet {
+      min-height: 197rem;
+      padding: 12rem;
+      padding-bottom: 70rem;
+      border-radius: 12rem 12rem 0 0;
+      background: url(./assets/images/testMaskMob.svg) no-repeat bottom/contain;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 200rem;
+      left: 0;
+      right: 0;
+      background: $white;
+      border-radius: inherit;
+      @include small-tablet {
+        bottom: 180rem;
+      }
+    }
+  }
+
+  /* .test-list__item-content */
+
+  &__item-content {
+    position: relative;
+    z-index: 2;
+    gap: 20rem;
+  }
+
+  /* .test-list__item-head */
+
+  &__item-head {
+    gap: 20rem;
+  }
+
+  /* .test-list__item-title */
+
+  &__item-title {
+    gap: 20rem;
+    @include small-tablet {
+      gap: 8rem;
+      align-items: center;
+    }
+  }
+
+  /* .test-list__item-svg */
+
+  &__item-svg {
+    width: 40rem;
+    height: 40rem;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 32rem;
+      height: 32rem;
+    }
+  }
+
+  &__item-num {
+    color: $black-500;
+    @include small-tablet {
+      display: none;
+    }
+  }
+  /* .test-list__item-desk */
+
+  &__item-desk {
+    @include small-tablet {
+      font-size: 16rem;
+    }
+  }
+
+  /* .test-list__item-btn */
+
+  &__item-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65rem;
+    height: 65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    border-radius: 50%;
+    @include small-tablet {
+      width: 52rem;
+      height: 52rem;
+    }
+    & img {
+      width: 32rem;
+      height: 32rem;
+      @include small-tablet {
+        width: 24rem;
+        height: 24rem;
+      }
+    }
+  }
+}

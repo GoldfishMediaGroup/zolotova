@@ -1,0 +1,47 @@
+.application {
+  /* .application__bg */
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  /* .application__container */
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .application__inner */
+
+  &__inner {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+  &__title {
+    color: $white;
+    @include small-tablet {
+      color: $black;
+    }
+  }
+
+  /* .application__form */
+
+  &__form {
+    border-radius: 28rem;
+    padding: 48rem 52rem;
+    width: 858rem;
+    background: $white;
+    @include small-tablet {
+      width: 100%;
+      padding: 20rem 12rem;
+      border-radius: 12rem;
+    }
+  }
+}

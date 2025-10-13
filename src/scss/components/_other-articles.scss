@@ -1,0 +1,77 @@
+.other-articles {
+  /* .other-articles__container */
+
+  &__container {
+  }
+
+  /* .other-articles__inner */
+
+  &__inner {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  /* .other-articles__head-wrap */
+
+  &__head-wrap {
+    gap: 12rem;
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  /* .other-articles__head */
+
+  &__head {
+  }
+
+  /* .other-articles__btn-box */
+
+  &__btn-box {
+  }
+
+  /* .other-articles__btn */
+
+  &__btn {
+  }
+
+  /* .other-articles__btn--prev */
+
+  &__btn--prev {
+  }
+
+  /* .other-articles__btn-next */
+
+  &__btn-next {
+  }
+
+  /* .other-articles__swiper-box */
+
+  &__swiper-box {
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  /* .other-articles__swiper */
+
+  &__swiper {
+    width: 100%;
+    @include small-tablet {
+      overflow: visible !important;
+    }
+  }
+
+  /* .other-articles__swiper-wrapper */
+
+  &__swiper-wrapper {
+  }
+
+  /* .other-articles__slide */
+
+  &__slide {
+    height: auto !important;
+  }
+}

@@ -1,0 +1,155 @@
+.way {
+  /* .way__contaniner */
+
+  &__contaniner {
+  }
+
+  /* .way__inner */
+
+  &__inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 24rem;
+    }
+  }
+
+  /* .way__img-wrap */
+
+  &__img-wrap {
+    position: relative;
+  }
+
+  /* .way__img */
+
+  &__img {
+    border-radius: 28rem;
+    width: 859rem;
+    height: 750rem;
+    overflow: hidden;
+    @include small-tablet {
+      border-radius: 12rem;
+      width: 335rem;
+      height: 293rem;
+    }
+  }
+
+  /* .way__img-text */
+
+  &__img-text {
+    position: absolute;
+    left: 24rem;
+    bottom: 24rem;
+    z-index: 2;
+    padding: 30rem 25rem 25rem;
+    color: $white;
+    border-radius: 20rem;
+    width: 419rem;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.2);
+    @include small-tablet {
+      width: auto;
+      left: 12rem;
+      bottom: 12rem;
+      right: 12rem;
+      border-radius: 8rem;
+      backdrop-filter: blur(7.8px);
+      -webkit-backdrop-filter: blur(7.8px);
+      padding: 12rem 8rem;
+      & p {
+        font-size: 14rem;
+      }
+    }
+  }
+
+  /* .way__content */
+
+  &__content {
+    gap: 40rem;
+    @include small-tablet {
+      gap: 24rem;
+    }
+  }
+
+  /* .way__swiper-box */
+
+  &__swiper-box {
+    @include small-tablet {
+      gap: 20rem;
+    }
+  }
+
+  /* .way__swiper */
+
+  &__swiper {
+    width: 100%;
+    @include small-tablet {
+      overflow: visible !important;
+    }
+  }
+
+  /* .way__swiper-wrapper */
+
+  &__swiper-wrapper {
+    @include desk-only {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20rem;
+      transform: unset !important;
+    }
+  }
+
+  /* .way__slide */
+
+  &__slide {
+    height: auto !important;
+  }
+
+  /* .way__slide-inner */
+
+  &__slide-inner {
+    height: 100%;
+    padding: 24rem;
+    background: $white;
+    min-height: 290rem;
+    gap: 20rem;
+    border-radius: 20rem;
+    @include small-tablet {
+      padding: 12rem;
+      min-height: 212rem;
+      gap: 20rem;
+      border-radius: 12rem;
+    }
+  }
+
+  /* .way__head */
+
+  &__head {
+    gap: 20rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  /* .way__num */
+
+  &__num {
+    border-radius: 50%;
+    width: 56rem;
+    height: 56rem;
+    background: $gray;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 32rem;
+      height: 32rem;
+    }
+  }
+  &__btn-box {
+    @include desk-only {
+      display: none;
+    }
+  }
+}

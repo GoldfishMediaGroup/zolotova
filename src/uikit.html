@@ -7,9 +7,10 @@
   </head>
   <body style="background: #b1b1b1">
     <div class="wrapper entrance">
+      <include src="./components/_popup.html"></include>
       <main>
         <div class="container" style="margin: 30rem auto; display: flex; flex-direction: column; gap: 30rem">
-          <button class="btn-arr btn-arr--white">
+          <button class="btn-arr btn-arr--white" data-popup="#popup__application">
             <p class="btn-arr__text">записаться на прием</p>
             <div class="btn-arr__svg">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +30,7 @@
               </svg>
             </div>
           </button>
-          <button class="btn-arr btn-arr--black">
+          <button class="btn-arr btn-arr--black" data-popup="#popup__application">
             <p class="btn-arr__text">записаться на прием</p>
             <div class="btn-arr__svg">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +50,7 @@
               </svg>
             </div>
           </button>
-          <button class="btn-arr btn-arr--white" disabled>
+          <button class="btn-arr btn-arr--white btn-arr--short" disabled data-popup="#popup__application">
             <p class="btn-arr__text">записаться на прием</p>
             <div class="btn-arr__svg">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +70,7 @@
               </svg>
             </div>
           </button>
-          <button class="btn-arr btn-arr--black" disabled>
+          <button class="btn-arr btn-arr--black" disabled data-popup="#popup__application">
             <p class="btn-arr__text">записаться на прием</p>
             <div class="btn-arr__svg">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +91,7 @@
             </div>
           </button>
 
-          <button class="btn-primary">записаться на прием</button>
+          <button class="btn-primary" data-popup="#popup__application">записаться на прием</button>
           <button class="btn-primary">Показать ещё</button>
         </div>
 

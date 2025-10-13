@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <section class="test-list _first">
+          <div class="test-list__container container">
+            <div class="test-list__inner flex dc">
+              <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list txt16">
+                  <li><a href="#">Главная</a></li>
+                  <li><p>Опросники</p></li>
+                </ul>
+              </nav>
+
+              <div class="test-list__content flex dc">
+                <div class="test-list__head flex dc">
+                  <p class="h1">Опросники</p>
+                  <p class="txt20">
+                    Работаю в парадигме доказательной медицины с применением современных мировых подходов к диагностике и лечению
+                    <span class="bold">seo текст</span>
+                  </p>
+                  <div class="test-list__important flex">
+                    <div class="test-list__important-svg">
+                      <img src="./assets/images/important.svg" alt="" />
+                    </div>
+
+                    <p class="txt16">
+                      Ни один из опросников не может заменить консультацию врача и является инструментом скрининга и субъективной
+                      оценки вашего состояния.
+                      <br />
+                      <br />
+                      Многие симптомы эндокринных заболеваний неспецифичны и могут встречаться при различных состояниях, в том
+                      числе и не связанных с гормональными нарушениями, поэтому результаты тестов должны оцениваться
+                      врачом-эндокринологом в комплексе с данными других исследований.
+                    </p>
+                  </div>
+                </div>
+                <div class="test-list__list-wrap flex dc">
+                  <ul class="test-list__list">
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test1.svg" alt="" />
+                              </div>
+                              <p class="h4">Лишний вес</p>
+                            </div>
+                            <p class="test-list__item-num txt20">01</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Определите ваши отношения с едой (Голландский опросник пищевого поведения DEBQ)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt="" /></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test2.svg" alt="" />
+                              </div>
+                              <p class="h4">Сахарный диабет и предиабет</p>
+                            </div>
+                            <p class="test-list__item-num txt20">02</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Узнайте свой риск сахарного диабета/предиабета (опросник FINDRISC)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt="" /></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test3.svg" alt="" />
+                              </div>
+                              <p class="h4">Возрастное снижение половых гормонов</p>
+                            </div>
+                            <p class="test-list__item-num txt20">03</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Проверьте, есть ли у Вас признаки возрастного снижения тестостерона (для мужчин) (Опросник возрастных
+                            симптомов андрогенного дефицита мужчины AMS)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn">
+                          <img src="./assets/images/arr-link.svg" alt="" />
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <button class="btn-primary">Показать ещё</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

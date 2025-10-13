@@ -111,7 +111,7 @@ export let formValidate = {
       }
     } else if (formRequiredItem.dataset.required === 'tel') {
       // formRequiredItem.value = formRequiredItem.value.replace(/[^0-9]/g, ''); // Оставить только цифры и символы +()
-      if (!/^\+\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(formRequiredItem.value)) {
+      if (!/^\+7 \(\d \d \d\) \d \d \d - \d \d - \d \d$/.test(formRequiredItem.value)) {
 
         this.addError(formRequiredItem);
         error++;

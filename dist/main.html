@@ -7,35 +7,1721 @@
     <title>Главная</title>
   <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
   <body>
-    <div class="wrapper entrance">
+    <div class="wrapper">
       <header class="header" id="header">
   <div class="container">
     <div class="header__inner flex cv sb">
-      
+      <a href="" class="header__logo logo blurBgHeader">Логотип</a>
+      <div class="header__nav-wrapper" data-lenis-prevent="true">
+        <nav class="header__nav flex cv sb blurBgHeader">
+          <ul class="header__list flex cv sb txt20">
+            <li>
+              <a href="#" class="header__link">Мои услуги</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Обо мне</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Мой путь</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Образование</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Статьи</a>
+            </li>
+          </ul>
+
+          <div class="header__nav-btn-box">
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+
+            <div class="socials flex cv">
+              <a href="tel:+74959693132" class="socials__social blurBgHeader">
+                <div class="socials__social-svg">
+                  <img src="./assets/images/whatsapp.svg" alt="">
+                </div>
+              </a>
+              <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+                <div class="socials__social-svg">
+                  <img src="./assets/images/telegram.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header__btn-wrap flex cv">
+        <div class="socials flex cv">
+          <a href="tel:+74959693132" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/whatsapp.svg" alt="">
+            </div>
+          </a>
+          <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/telegram.svg" alt="">
+            </div>
+          </a>
+        </div>
+
+        <button class="btn-primary" data-popup="#popup__application">записаться на прием</button>
+
+        <button class="burger blurBgHeader">
+          <div class="burger__svg">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line class="opacity" x1="2.1748" y1="6.05005" x2="21.6748" y2="6.05005" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="left" x1="2.1748" y1="12.05" x2="21.6748" y2="12.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="right" x1="2.1748" y1="12.05" x2="21.6748" y2="12.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="opacity" x1="2.1748" y1="18.05" x2="21.6748" y2="18.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 
-      
+      <div id="popup__application" aria-hidden="true" class="popup popup--application" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-content flex dc">
+          <div class="popup__body-text flex dc">
+            <p class="h2">онлайн запись</p>
+          </div>
+          <form class="popup__form form flex dc" data-popup-message="#popup__success" data-dev="" action="">
+            <p class="form__title txt20">
+              Заполните форму и я свяжусь с вами, чтобы помочь выбрать удобное время для консультации.
+            </p>
 
-      <main></main>
+            <div class="form__content">
+              <div class="form__input-box flex dc">
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--name form__input txt20" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]" placeholder="Введите ваше имя">
+                    <span class="form__placeholder txt16">Имя</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--tel phone-mask form__input txt20" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]" placeholder="+7 (9 _ _) _ _ _ - _ _ - _ _">
+
+                    <span class="form__placeholder txt16">Номер телефона</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--mail form__input txt20" type="text" data-validate="" data-required="email" autocomplete="off" name="form[]" placeholder="Введите адрес электронной почты">
+                    <span class="form__placeholder txt16">Электронная почта</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+              </div>
+              <div class="form__btn-box">
+                <label class="form__check-label">
+                  <input type="checkbox">
+                  <span class="form__check-square"></span>
+                  <span class="txt14 lh140 light tertiary-color">
+                    Соглашаюсь на&nbsp;Обработку персональных данных и&nbsp;принимаю Условия
+                    <a href="">политики конфиденциальности</a>
+                  </span>
+                </label>
+
+                <button class="btn-arr btn-arr--black" disabled="" type="submit">
+                  <p class="btn-arr__text">записаться на прием</p>
+                  <div class="btn-arr__svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                      <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-content flex dc">
+          <div class="popup__body-text flex dc">
+            <p class="h2">заявка отправлена</p>
+            <p class="txt20">
+              Ваша заявка успешно отправлена.
+              <br>
+              Мы свяжемся с вами в ближайшее время.
+            </p>
+          </div>
+
+          <button class="btn-arr btn-arr--black" data-close="">
+            <p class="btn-arr__text">на главную</p>
+            <div class="btn-arr__svg">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__illness" aria-hidden="true" class="popup popup--illness" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex">
+          <div class="popup__body-img" data-da="#popup__illness .popup__body-content, 768, 1">
+            <img src="./assets/images/ill.webp" alt="">
+          </div>
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Заболевания щитовидной железы</p>
+              <p class="txt20">
+                Гипотиреоз, тиреотоксикоз, тиреоидиты, зоб, злокачественные
+                <br>
+                новообразования, ведение послеоперационных пациентов.
+              </p>
+            </div>
+
+            <button class="btn-arr btn-arr--black" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__illness-no-photo" aria-hidden="true" class="popup popup--illness" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex">
+          <!-- <div class="popup__body-img" data-da="#popup__illness-no-photo .popup__body-content, 768, 1">
+            <img src="./assets/images/ill.webp" alt="" />
+          </div> -->
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Заболевания щитовидной железы</p>
+              <p class="txt20">
+                Гипотиреоз, тиреотоксикоз, тиреоидиты, зоб, злокачественные
+                <br>
+                новообразования, ведение послеоперационных пациентов.
+              </p>
+            </div>
+
+            <button class="btn-arr btn-arr--black" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-online" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Консультация онлайн</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Подробное обсуждение жалоб и истории развития заболевания</li>
+                  <li class="popup__item">Изучение результатов ранее пройденных обследований (при их наличии)</li>
+                  <li class="popup__item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                  <li class="popup__item">Определение дальнейшего хода обследования и лечения</li>
+                </ul>
+              </div>
+
+              <div class="popup__important flex dc">
+                <p class="h4">Важно!</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Консультация проходит по видеосвязи</li>
+                  <li class="popup__item">Длительность 45-60 минут, в зависимости от сложности случая</li>
+                  <li class="popup__item">Все назначения носят рекомендательный характер</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+                3000 ₽
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-offline" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Консультация в клинике</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Подробное обсуждение жалоб, анамнеза, динамики состояния</li>
+                  <li class="popup__item">Изучение результатов ранее пройденных обследований</li>
+                  <li class="popup__item">Осмотр и оценка состава тела (биоимпедансометрия) по показаниям</li>
+                  <li class="popup__item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                  <li class="popup__item">Назначение лечения&nbsp;</li>
+                </ul>
+              </div>
+
+              <div class="popup__important flex dc">
+                <p class="h4">Важно!</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Запись осуществляется заранее через сайт клиники</li>
+                  <li class="popup__item">Время приема регламентировано - 30 минут</li>
+                  <li class="popup__item">
+                    Возможность в Клинике сразу сдать анализы и пройти дообследование, в т. ч. у смежных специалистов
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+                2900/2700₽
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-accompaniment" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Сопровождение по питанию</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Изучение истории набора веса и связанных с этим аспектов</li>
+                  <li class="popup__item">Оценка пищевого поведения</li>
+                  <li class="popup__item">Определение целей и формата дальнейшей коммуникации</li>
+                  <li class="popup__item">Наблюдение и оценка характера питания 24/7</li>
+                  <li class="popup__item">Индивидуально составленные диетологические рекомендации</li>
+                  <li class="popup__item">Работа с целью и мотивацией, навязчивым аппетитом и эмоциогенным перееданием</li>
+                  <li class="popup__item">Разработка индивидуального рациона</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+               5000 ₽/нед
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <main>
+        <section class="hero">
+  <picture class="hero__bg">
+    <source srcset="./assets/images/heroBgMob.webp" media="(max-width: 768px)">
+    <source srcset="./assets/images/heroBg.webp" media="(min-width: 769px)">
+    <img src="./assets/images/heroBg.webp" alt="Hero background">
+  </picture>
+  <div class="hero__container container">
+    <div class="hero__inner flex dc">
+      <div class="hero__text-wrap flex dc">
+        <div class="hero__person flex dc">
+          <p class="h1">Золотова елизавета владимировна</p>
+          <p class="txt20">Врач-эндокринолог, диетолог, специалист по психологии пищевого поведения.&nbsp;</p>
+        </div>
+
+        <div class="hero__btn-wrap " data-da=".hero__aside, 768, first">
+
+      
+        <button class="btn-arr btn-arr--white btn-arr--short" data-popup="#popup__application">
+          <p class="btn-arr__text">записаться на прием</p>
+          <div class="btn-arr__svg">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+              <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </button>  </div>
+      </div>
+
+      <div class="hero__swiper-box">
+        <div class="hero__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="hero__slide swiper-slide">
+              <div class="hero__slide-inner flex dc">
+                <div class="hero__slide-text flex dc">
+                  <div class="hero__slide-title flex cv">
+                    <div class="hero__svg">
+                      <img src="./assets/images/heroSvg1.svg" alt="">
+                    </div>
+                    <p class="h4">принцип работы</p>
+                  </div>
+                  <p class="txt20">
+                    Работаю в парадигме доказательной медицины с применением современных мировых подходов к диагностике и лечению
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <div class="hero__slide-inner flex dc">
+                <div class="hero__slide-text flex dc">
+                  <div class="hero__slide-title flex cv">
+                    <div class="hero__svg">
+                      <img src="./assets/images/heroSvg2.svg" alt="">
+                    </div>
+                    <p class="h4">результативность</p>
+                  </div>
+                  <p class="txt20">
+                    Мои пациенты получают не только результат, но и уверенность в том, что они идут правильным и безопасным путем
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__pagination swiper-pagination"></div>
+      </div>
+
+      <div class="hero__aside">
+        <div class="hero__num-wrap">
+          <div class="hero__num-text flex dc">
+            <p class="h2">500+</p>
+            <p class="txt20">здоровых и счастливых пациентов</p>
+          </div>
+        </div>
+        <div class="hero__video-wrap">
+          <button class="hero__video-close">
+            <img src="./assets/images/closeVideo.svg" alt="">
+          </button>
+          <a href="#" data-fancybox="" data-src="./assets/images/videoTest.mp4" class="hero__video">
+            <video class="" preload="metadata" autoplay="" muted="" playsinline="" loop="">
+              <source src="./assets/images/videoTest.mp4" type="video/mp4">
+            </video>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="about">
+  <div class="about__container container">
+    <div class="about__inner grid">
+      <div class="about__info flex dc sb">
+        <p class="h2">Обо мне</p>
+        <div class="about__requests flex dc">
+          <p class="h4">с какими запросами я работаю</p>
+
+          <div class="about__requests-box flex dc">
+            <ul class="about__requests-list about__requests-list--show flex"></ul>
+            <div class="about__requests-wrap">
+              <div class="about__requests-inner flex dc">
+                <div class="about__requests-list about__requests-list--hide flex">
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item" data-da=".about__requests-list--show, 768, first">
+                    <p class="txt18">Сахарный диабет</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness" class="about__requests-item">
+                    <p class="txt18">Ожирение и метаболический синдром&nbsp;</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item" data-da=".about__requests-list--show, 768, last">
+            
+                    <p class="txt18">Остеопороз</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+                    <p class="txt18">Заболевания щитовидной железы</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+                    <p class="txt18">Патология гипоталамо-гипофизарной системы</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+                    <p class="txt18">Нарушения фосфорно-кальциевого обмена</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+                    <p class="txt18">Заболевания надпочечников</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+            
+                    <p class="txt18">Гипогонадизм и другие нарушения репродуктивной системы мужчин и женщин</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                  <button data-popup="#popup__illness-no-photo" class="about__requests-item">
+                    <p class="txt18">Недиабетические гипогликемии</p>
+                    <div class="about__requests-item-arr-wrap">
+                      <div class="about__requests-item-arr">
+                        <img src="./assets/images/arr-left.svg" alt="">
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <button data-popup="#popup__illness-no-photo" class="btn-arr btn-arr--black">
+                  <p class="btn-arr__text">записаться на прием</p>
+                  <div class="btn-arr__svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                      <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__show-more txt16 ">
+            <div class="about__show-more-text">
+              <span>Показать больше</span>
+              <span>Скрыть</span>
+            </div>
+            <div class="about__show-more-arr">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6749 3.51429L13.6749 2.76429L12.1749 2.76429L12.1749 3.51429L12.9249 3.51429L13.6749 3.51429ZM12.1749 19.4242C12.1749 19.8384 12.5107 20.1742 12.9249 20.1742C13.3391 20.1742 13.6749 19.8384 13.6749 19.4242L12.9249 19.4242L12.1749 19.4242ZM12.9249 3.51429L12.1749 3.51429V19.4242L12.9249 19.4242L13.6749 19.4242V3.51429L12.9249 3.51429Z" fill="#393C43"></path>
+                <path d="M19.8191 13.5903L12.9248 20.4846L6.03052 13.5903" stroke="#393C43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="about__list flex dc">
+        <li class="about__item flex dc">
+          <div class="about__item-head flex cv">
+            <div class="about__item-svg">
+              <img src="./assets/images/about1.svg" alt="">
+            </div>
+            <p class="about__item-title h4">Моя миссия</p>
+          </div>
+          <p class="txt20">
+            Сделать Ваш путь к здоровью и красоте максимально
+            <span class="bold">комфортным и эффективным</span>
+            .
+          </p>
+        </li>
+
+        <li class="about__item flex dc">
+          <div class="about__item-head flex cv">
+            <div class="about__item-svg">
+              <img src="./assets/images/about2.svg" alt="">
+            </div>
+            <p class="about__item-title h4">БЕЗ ЛИШНИХ ТРАТ</p>
+          </div>
+          <p class="txt20">
+            <span class="bold">Придерживаюсь клинических рекомендаций</span>
+            — от меня Вы не получите бесполезные советы и ненужные назначения.&nbsp;
+          </p>
+        </li>
+
+        <li class="about__item flex dc">
+          <div class="about__item-head flex cv">
+            <div class="about__item-svg">
+              <img src="./assets/images/about3.svg" alt="">
+            </div>
+            <p class="about__item-title h4">ПЕРСОНАЛИЗИРОВАННЫЙ ПОДХОД</p>
+          </div>
+          <p class="txt20">
+            Не даю общие советы, а учитываю Ваш
+            <span class="bold">эмоциональный фон и индивидуальные особенности</span>
+            образа жизни и питания.
+          </p>
+        </li>
+
+        <li class="about__item flex dc">
+          <div class="about__item-head flex cv">
+            <div class="about__item-svg">
+              <img src="./assets/images/about4.svg" alt="">
+            </div>
+            <p class="about__item-title h4">ДОВЕРИЕ И ЭМПАТИЯ</p>
+          </div>
+          <p class="txt20">
+            Я и ВЫ - партнеры. Минимум критики и давления,
+            <span class="bold">максимум эмпатии и поддержки</span>
+            в совместной работе.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="way">
+  <div class="container way__contaniner">
+    <div class="way__inner grid">
+      <div class="way__img-wrap" data-da=".way__content, 768, 1">
+        <div class="way__img">
+          <img src="./assets/images/wayPhoto.webp" alt="">
+        </div>
+        <div class="way__img-text">
+          <p class="txt20">
+            «Я убеждена в том, что врач - это тот, кто помогает не только выздороветь, но и начать жить полной жизнью. Именно для
+            этого я здесь.»
+          </p>
+        </div>
+      </div>
+      <div class="way__content flex dc sb">
+        <p class="h2">Мой путь</p>
+
+        <div class="way__swiper-box flex dc ">
+          <div class="way__swiper swiper">
+            <div class="way__swiper-wrapper swiper-wrapper">
+              <div class="way__slide swiper-slide">
+                <div class="way__slide-inner flex dc sb">
+                  <div class="way__head flex cv">
+                    <div class="way__num flex-cc">
+                      <p class="num">01</p>
+                    </div>
+                    <p class="h4">Мечта со школы</p>
+                  </div>
+                  <p class="txt20">
+                    Ещё в школьные годы
+                    <span class="bold">главным интересом моей жизни</span>
+                    был человеческий организм и то, как он устроен.
+                  </p>
+                </div>
+              </div>
+              <div class="way__slide swiper-slide">
+                <div class="way__slide-inner flex dc sb">
+                  <div class="way__head flex cv">
+                    <div class="way__num flex-cc">
+                      <p class="num">02</p>
+                    </div>
+                    <p class="h4">дело жизни</p>
+                  </div>
+                  <p class="txt20">
+                    Фундаментальные знания в области в медицины, любовь к спорту и активному образу жизни привели меня в
+                    эндокринологию -
+                    <span class="bold">здесь я нашла свое призвание</span>
+                    .
+                  </p>
+                </div>
+              </div>
+              <div class="way__slide swiper-slide">
+                <div class="way__slide-inner flex dc sb">
+                  <div class="way__head flex cv">
+                    <div class="way__num flex-cc">
+                      <p class="num">03</p>
+                    </div>
+                    <p class="h4">Мой опыт</p>
+                  </div>
+                  <p class="txt20">
+                    Ординатура в Эндокринологическом научном центре - это
+                    <span class="bold">
+                      бесценный опыт работы со сложными клиническими случаями под руководством сильнейших наставников
+                    </span>
+                    и навыки слышать и слушать каждого пациента.
+                  </p>
+                </div>
+              </div>
+              <div class="way__slide swiper-slide">
+                <div class="way__slide-inner flex dc sb">
+                  <div class="way__head flex cv">
+                    <div class="way__num flex-cc">
+                      <p class="num">04</p>
+                    </div>
+                    <p class="h4">сегодня</p>
+                  </div>
+                  <p class="txt20">
+                    Как эндокринолог и диетолог я слежу за тенденциями в научном медицинском сообществе и применяю их на практике,
+                    чтобы оказать Вам
+                    <span class="bold">максимально квалифицированную помощь</span>
+                    .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="way__btn-box swiper-btn-box flex cv">
+            <button class="way__btn way__btn--prev swiper-button swiper-button-prev">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4105 13.5145L22.1605 13.5145L22.1605 12.0145L21.4105 12.0145L21.4105 12.7645L21.4105 13.5145ZM5.50062 12.0145C5.0864 12.0145 4.75062 12.3503 4.75062 12.7645C4.75062 13.1787 5.0864 13.5145 5.50062 13.5145L5.50062 12.7645L5.50062 12.0145ZM21.4105 12.7645L21.4105 12.0145H5.50062L5.50062 12.7645L5.50062 13.5145H21.4105L21.4105 12.7645Z" fill="white"></path>
+                <path d="M11.3345 19.6587L4.44018 12.7644L11.3345 5.87012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="way__btn way__btn-next swiper-button swiper-button-next">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.43958 12.0153L3.68958 12.0153L3.68958 13.5153L4.43958 13.5153L4.43958 12.7653L4.43958 12.0153ZM20.3495 13.5153C20.7637 13.5153 21.0995 13.1795 21.0995 12.7653C21.0995 12.3511 20.7637 12.0153 20.3495 12.0153L20.3495 12.7653L20.3495 13.5153ZM4.43958 12.7653L4.43958 13.5153H20.3495L20.3495 12.7653L20.3495 12.0153H4.43958L4.43958 12.7653Z" fill="white"></path>
+                <path d="M14.5156 5.87109L21.4099 12.7654L14.5156 19.6597" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="services">
+  <div class="services__container container">
+    <div class="services__inner">
+      <div class="services__content flex dc">
+        <div class="services__head flex dc">
+          <p class="h2">Услуги</p>
+          <p class="txt20">
+            На приеме мы работаем вместе - без осуждения и с уважением к вашей проблеме. Для меня не бывает двух одинаковых
+            пациентов. Я стараюсь учитывать все: от особенностей организма до образа жизни, чтобы найти оптимальное решение
+            проблемы и получить наилучший результат
+          </p>
+        </div>
+
+        <ul class="services__list flex ">
+          <li class="services__item">
+            <div class="services__item-inner flex dc sb">
+              <div class="services__item-content flex dc sb">
+                <div class="services__item-head flex sb">
+                  <p class="h4">КОНСУЛЬТАЦИЯ ОНЛАЙН</p>
+                  <p class="services__item-num txt20">01</p>
+                </div>
+
+                <div class="services__list-box flex dc">
+                  <p class="txt20 semibold">Что входит:</p>
+                  <ul class="services__inner-list txt16 flex dc">
+                    <li class="services__list-item">Подробное обсуждение жалоб и истории развития заболевания</li>
+                    <li class="services__list-item">Изучение результатов ранее пройденных обследований (при их наличии)</li>
+                    <li class="services__list-item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                    <li class="services__list-item">Определение дальнейшего хода обследования и лечения</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="services__item-price">
+                <p class="number">3000 ₽</p>
+                <p class="txt16 gray">стоимость услуги</p>
+              </div>
+            </div>
+            <a href="../consultation-online.html" class="services__item-btn" data-popup="#popup__consult-online">
+              <img src="./assets/images/arr-link.svg" alt="">
+            </a>
+          </li>
+          <li class="services__item">
+            <div class="services__item-inner flex dc sb">
+              <div class="services__item-content flex dc sb">
+                <div class="services__item-head flex sb">
+                  <p class="h4">КОНСУЛЬТАЦИЯ В КЛИНИКЕ</p>
+                  <p class="services__item-num txt20">02</p>
+                </div>
+
+                <div class="services__list-box flex dc">
+                  <p class="txt20 semibold">Что входит:</p>
+                  <ul class="services__inner-list txt16 flex dc">
+                    <li class="services__list-item">Подробное обсуждение жалоб, анамнеза, динамики состояния</li>
+                    <li class="services__list-item">Изучение результатов ранее пройденных обследований</li>
+                    <li class="services__list-item">Осмотр и оценка состава тела (биоимпедансометрия) по показаниям</li>
+                    <li class="services__list-item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                    <li class="services__list-item">Назначение лечения&nbsp;</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="services__item-price">
+                <p class="number">2900/2700 ₽</p>
+                <p class="txt16 gray">стоимость услуги</p>
+              </div>
+            </div>
+            <a href="../consultation-offline.html" class="services__item-btn" data-popup="#popup__consult-offline">
+              <img src="./assets/images/arr-link.svg" alt="">
+            </a>
+          </li>
+          <li class="services__item services__item--dark">
+            <div class="services__item-inner flex dc sb">
+              <div class="services__item-content flex dc sb">
+                <div class="services__item-head flex sb">
+                  <p class="h4">КОНСУЛЬТАЦИЯ В КЛИНИКЕ</p>
+                  <p class="services__item-num txt20">02</p>
+                </div>
+
+                <div class="services__list-box flex dc">
+                  <p class="txt20 semibold">Что входит:</p>
+                  <ul class="services__inner-list txt16 flex dc">
+                    <li class="services__list-item">Изучение истории набора веса и связанных с этим аспектов</li>
+                    <li class="services__list-item">Оценка пищевого поведения</li>
+                    <li class="services__list-item">Определение целей и формата дальнейшей коммуникации</li>
+                    <li class="services__list-item">Наблюдение и оценка характера питания 24/7</li>
+                    <li class="services__list-item">Индивидуально составленные диетологические рекомендации</li>
+                    <li class="services__list-item">Работа с целью и мотивацией, навязчивым аппетитом и эмоциогенным перееданием</li>
+                    <li class="services__list-item">Разработка индивидуального рациона</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="services__item-price">
+                <p class="number">5000 ₽/нед</p>
+                <p class="txt16 gray">стоимость услуги</p>
+              </div>
+            </div>
+            <a href="../consultation-accompaniment.html" class="services__item-btn" data-popup="#popup__consult-accompaniment">
+              <img src="./assets/images/arr-link.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="services__photo">
+    <img src="./assets/images/servicesPhoto.webp" alt="">
+  </div>
+</section>
+
+        <section class="education">
+  <div class="education__container container">
+    <div class="education__inner flex dc">
+      <div class="education__head grid">
+        <p class="h2">образование</p>
+        <p class="education__text txt20">
+          Моя&nbsp;профессия требует постоянного развития, и&nbsp;я&nbsp;с&nbsp;радостью продолжаю учиться. Активно участвую в медицинских
+          конференциях, являюсь автором научных медицинских публикаций и соавтором учебного пособия по диагностике в
+          эндокринологии для врачей.
+        </p>
+
+        <div class="education__show-more txt16">
+          <div class="education__show-more-text">
+            <span>Показать больше</span>
+            <span>Скрыть</span>
+          </div>
+          <div class="education__show-more-arr">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6749 3.51429L13.6749 2.76429L12.1749 2.76429L12.1749 3.51429L12.9249 3.51429L13.6749 3.51429ZM12.1749 19.4242C12.1749 19.8384 12.5107 20.1742 12.9249 20.1742C13.3391 20.1742 13.6749 19.8384 13.6749 19.4242L12.9249 19.4242L12.1749 19.4242ZM12.9249 3.51429L12.1749 3.51429V19.4242L12.9249 19.4242L13.6749 19.4242V3.51429L12.9249 3.51429Z" fill="#393C43"></path>
+              <path d="M19.8191 13.5903L12.9248 20.4846L6.03052 13.5903" stroke="#393C43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="education__swiper-box flex dc">
+        <div class="education__swiper swipre">
+          <div class="education__swiper-wrapper swiper-wrapper">
+            <div class="education__slide swiper-slide">
+              <div class="education__slide-inner flex dc">
+                <p class="h4">2021 - 2022</p>
+                <ul class="education__list flex dc">
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg1.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      ФГАОУ ВО «Российский Национальный Исследовательский Медицинский Университет им. Н. И . Пирогова» МЗ РФ,
+                      специальность «Лечебное дело»
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Курс «Специалист по функциональному интегративному питанию» на базе Института функциональной интегративной
+                      диетологии IFID
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Курс повышения квалификации «Эндокринология в спорте» на базе Первого Московского государственного
+                      медицинского университета им. И. М. Сеченова
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="education__slide swiper-slide">
+              <div class="education__slide-inner flex dc">
+                <p class="h4">2023</p>
+                <ul class="education__list flex dc">
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg1.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Клиническая ординатура в ФГБУ «НМИЦ эндокринологии им. академика И.И. Дедова» МЗ РФ&nbsp; по специальности
+                      «Эндокринология»
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Профессиональная переподготовка в АНО ДПО «Медицинский университет инноваций и развития» по специальности
+                      «Диетология»
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Профессиональная переподготовка по программе «Нутрициология» на базе Института профессионального образования
+                      Сеченовского Университета
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16"></p>
+                    <p class="txt16">
+                      Стажировка в лаборатории патоморфологии, генетики и метаболомных исследований на базе ФГБУ «НМИЦ
+                      эндокринологии им. академика И.И. Дедова» МЗ РФ.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="education__slide swiper-slide">
+              <div class="education__slide-inner flex dc">
+                <p class="h4">2024 - 2025</p>
+                <ul class="education__list flex dc">
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Курс повышения квалификации «Гипогонадизм у мужчин. Клиническое значение, влияние на эффективность терапии
+                      сахарного диабета и ожирения» на базе ФГБУ «НМИЦ эндокринологии» МЗ РФ
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Курс повышения квалификации «Гинекологическая эндокринология» на базе ООО «Открытые медицинские
+                      коммуникации»
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Курс повышения квалификации «Психология пищевого поведения» на базе Московского института психоанализа
+                    </p>
+                  </li>
+                  <li class="education__item flex cv">
+                    <div class="education__item-svg">
+                      <img src="./assets/images/educationSvg2.svg" alt="">
+                    </div>
+                    <p class="txt16">
+                      Очный обучающий курс «Ведение бариатрического пациента от А до Я» от Общества бариатрических хирургов и
+                      секции Ассоциированных специалистов
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="education__btn-box swiper-btn-box flex cv">
+          <button class="education__btn education__btn--prev swiper-button swiper-button-prev">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.4105 13.5145L22.1605 13.5145L22.1605 12.0145L21.4105 12.0145L21.4105 12.7645L21.4105 13.5145ZM5.50062 12.0145C5.0864 12.0145 4.75062 12.3503 4.75062 12.7645C4.75062 13.1787 5.0864 13.5145 5.50062 13.5145L5.50062 12.7645L5.50062 12.0145ZM21.4105 12.7645L21.4105 12.0145H5.50062L5.50062 12.7645L5.50062 13.5145H21.4105L21.4105 12.7645Z" fill="white"></path>
+              <path d="M11.3345 19.6587L4.44018 12.7644L11.3345 5.87012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button class="education__btn education__btn-next swiper-button swiper-button-next">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.43958 12.0153L3.68958 12.0153L3.68958 13.5153L4.43958 13.5153L4.43958 12.7653L4.43958 12.0153ZM20.3495 13.5153C20.7637 13.5153 21.0995 13.1795 21.0995 12.7653C21.0995 12.3511 20.7637 12.0153 20.3495 12.0153L20.3495 12.7653L20.3495 13.5153ZM4.43958 12.7653L4.43958 13.5153H20.3495L20.3495 12.7653L20.3495 12.0153H4.43958L4.43958 12.7653Z" fill="white"></path>
+              <path d="M14.5156 5.87109L21.4099 12.7654L14.5156 19.6597" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="cert">
+  <div class="cert__container container">
+    <div class="cert__inner flex dc">
+      <div class="cert__head flex cv sb">
+        <p class="h2">Дипломы</p>
+        <div class="cert__btn-box swiper-btn-box flex cv" data-da=".cert__swiper-box, 768, last">
+          <button class="cert__btn cert__btn--prev swiper-button swiper-button-prev">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.4105 13.5145L22.1605 13.5145L22.1605 12.0145L21.4105 12.0145L21.4105 12.7645L21.4105 13.5145ZM5.50062 12.0145C5.0864 12.0145 4.75062 12.3503 4.75062 12.7645C4.75062 13.1787 5.0864 13.5145 5.50062 13.5145L5.50062 12.7645L5.50062 12.0145ZM21.4105 12.7645L21.4105 12.0145H5.50062L5.50062 12.7645L5.50062 13.5145H21.4105L21.4105 12.7645Z" fill="white"></path>
+              <path d="M11.3345 19.6587L4.44018 12.7644L11.3345 5.87012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button class="cert__btn cert__btn-next swiper-button swiper-button-next">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.43958 12.0153L3.68958 12.0153L3.68958 13.5153L4.43958 13.5153L4.43958 12.7653L4.43958 12.0153ZM20.3495 13.5153C20.7637 13.5153 21.0995 13.1795 21.0995 12.7653C21.0995 12.3511 20.7637 12.0153 20.3495 12.0153L20.3495 12.7653L20.3495 13.5153ZM4.43958 12.7653L4.43958 13.5153H20.3495L20.3495 12.7653L20.3495 12.0153H4.43958L4.43958 12.7653Z" fill="white"></path>
+              <path d="M14.5156 5.87109L21.4099 12.7654L14.5156 19.6597" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="cert__swiper-box flex dc">
+        <div class="cert__swiper swiper">
+          <div class="cert__swiper-wrapper swiper-wrapper">
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert1.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">Диплом о высшем медицинском образовании «Лечебное дело»</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert2.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">удостоверение о повышении квалификации</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert3.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">Сертификат обучения «Ведение бариатрического пациента от а до я»</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert4.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">удостоверение о повышении квалификации</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert1.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">Диплом о высшем медицинском образовании «Лечебное дело»</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert2.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">удостоверение о повышении квалификации</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert3.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">Сертификат обучения «Ведение бариатрического пациента от а до я»</p>
+                </div>
+              </a>
+            </div>
+            <div class="cert__slide swiper-slide">
+              <a href="#" data-fancybox="cert" data-src="./assets/images/certFancybox.webp" class="cert__slide-inner flex dc">
+                <div class="cert__img-wrap">
+                  <div class="cert__img-inner flex-cc">
+                    <div class="cert__img">
+                      <img src="./assets/images/cert4.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="cert__inc flex-cc">
+                    <img src="./assets/images/inc.svg" alt="">
+                  </div>
+                </div>
+                <div class="cert__name">
+                  <p class="h5">удостоверение о повышении квалификации</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="reviews">
+  <div class="reviews__container container">
+    <div class="reviews__inner flex dc">
+      <div class="reviews__head-wrap flex dc">
+        <div class="reviews__head flex cv sb">
+          <p class="h2">Отзывы</p>
+
+          <div class="reviews__btn-box swiper-btn-box flex cv" data-da=".reviews__swiper-box, 768, last">
+            <button class="reviews__btn reviews__btn--prev swiper-button swiper-button-prev">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4105 13.5145L22.1605 13.5145L22.1605 12.0145L21.4105 12.0145L21.4105 12.7645L21.4105 13.5145ZM5.50062 12.0145C5.0864 12.0145 4.75062 12.3503 4.75062 12.7645C4.75062 13.1787 5.0864 13.5145 5.50062 13.5145L5.50062 12.7645L5.50062 12.0145ZM21.4105 12.7645L21.4105 12.0145H5.50062L5.50062 12.7645L5.50062 13.5145H21.4105L21.4105 12.7645Z" fill="white"></path>
+                <path d="M11.3345 19.6587L4.44018 12.7644L11.3345 5.87012" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="reviews__btn reviews__btn-next swiper-button swiper-button-next">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.43958 12.0153L3.68958 12.0153L3.68958 13.5153L4.43958 13.5153L4.43958 12.7653L4.43958 12.0153ZM20.3495 13.5153C20.7637 13.5153 21.0995 13.1795 21.0995 12.7653C21.0995 12.3511 20.7637 12.0153 20.3495 12.0153L20.3495 12.7653L20.3495 13.5153ZM4.43958 12.7653L4.43958 13.5153H20.3495L20.3495 12.7653L20.3495 12.0153H4.43958L4.43958 12.7653Z" fill="white"></path>
+                <path d="M14.5156 5.87109L21.4099 12.7654L14.5156 19.6597" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="reviews__links-wrap flex dc">
+          <p class="txt20">Оставьте свой отзыв — он поможет другим сделать правильный выбор.</p>
+          <ul class="reviews__links flex cv">
+            <li><a href="#" class="reviews__link h5">Docdoc.ru</a></li>
+            <li><a href="#" class="reviews__link h5">smclinic.ru</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reviews__swiper-box flex dc">
+        <div class="reviews__swiper swiper">
+          <div class="reviews__swiper-wrapper swiper-wrapper">
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-text-box flex dc">
+                    <div class="reviews__slide-logo">
+                      <img src="./assets/images/prodoctorov.webp" alt="">
+                    </div>
+                    <p class="reviews__slide-text txt16">
+                      Хочу поблагодарить Золотову Елизавету Владимировну, врача-диетолога. Я очень хотела ребенка, но для этого
+                      необходимо было скинуть вес. Что я только не пробовала - не помогало, и только после консультации с врачом,
+                      я смогла найти «золотой рецепт» похудения. Благодаря назначениям и рекомендациям Елизаветы Владимировны,
+                      моего труда и терпения я смогла осуществить свою мечту - стать мамой.
+                    </p>
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-img-box">
+                    <img src="./assets/images/reviews1.webp" alt="">
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-text-box flex dc">
+                    <div class="reviews__slide-logo">
+                      <img src="./assets/images/smclinika.webp" alt="">
+                    </div>
+                    <p class="reviews__slide-text txt16">
+                      Благодаря Елизавете Владимировне я похудел на 23 кг меньше чем за год, и привел сахар в норму. Спасибо ей и
+                      СМ-Клинике
+                    </p>
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Владимир</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/man.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-img-box">
+                    <img src="./assets/images/reviews2.webp" alt="">
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-text-box flex dc">
+                    <div class="reviews__slide-logo">
+                      <img src="./assets/images/prodoctorov.webp" alt="">
+                    </div>
+                    <p class="reviews__slide-text txt16">
+                      Хочу поблагодарить Золотову Елизавету Владимировну, врача-диетолога. Я очень хотела ребенка, но для этого
+                      необходимо было скинуть вес. Что я только не пробовала - не помогало, и только после консультации с врачом,
+                      я смогла найти «золотой рецепт» похудения. Благодаря назначениям и рекомендациям Елизаветы Владимировны,
+                      моего труда и терпения я смогла осуществить свою мечту - стать мамой.
+                    </p>
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-img-box">
+                    <img src="./assets/images/reviews1.webp" alt="">
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-text-box flex dc">
+                    <div class="reviews__slide-logo">
+                      <img src="./assets/images/smclinika.webp" alt="">
+                    </div>
+                    <p class="reviews__slide-text txt16">
+                      Благодаря Елизавете Владимировне я похудел на 23 кг меньше чем за год, и привел сахар в норму. Спасибо ей и
+                      СМ-Клинике
+                    </p>
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Владимир</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/man.webp" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__slide-inner">
+                <div class="reviews__slide-content flex dc sb">
+                  <div class="reviews__slide-img-box">
+                    <img src="./assets/images/reviews2.webp" alt="">
+                  </div>
+                  <div class="reviews__slide-person">
+                    <p class="h5">Ольга Крылова</p>
+                    <p class="txt16">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="reviews__slide-photo">
+                  <img src="./assets/images/woman.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="test-section">
+  <div class="test-section__bg">
+    <img src="./assets/images/testSectionBg.webp" alt="">
+  </div>
+  <div class="test-section__container container">
+    <div class="test-section__inner flex dc">
+      <div class="test-section__head flex cv sb">
+        <p class="h2">Отзывы</p>
+        <a href="#" class="btn-primary" data-da=".test-section__list-box, 768, last">Смотреть все</a>
+      </div>
+      <div class="test-section__list-box flex dc">
+        <ul class="test-section__list">
+          <li>
+            <a href="#" class="test-list__item">
+              <div class="test-list__item-content flex dc">
+                <div class="test-list__item-head flex sb">
+                  <div class="test-list__item-title flex">
+                    <div class="test-list__item-svg">
+                      <img src="./assets/images/test1.svg" alt="">
+                    </div>
+                    <p class="h4">Лишний вес</p>
+                  </div>
+                  <p class="test-list__item-num txt20">01</p>
+                </div>
+
+                <p class="test-list__item-desk txt18">
+                  Определите ваши отношения с едой (Голландский опросник пищевого поведения DEBQ)
+                </p>
+              </div>
+              <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="test-list__item">
+              <div class="test-list__item-content flex dc">
+                <div class="test-list__item-head flex sb">
+                  <div class="test-list__item-title flex">
+                    <div class="test-list__item-svg">
+                      <img src="./assets/images/test2.svg" alt="">
+                    </div>
+                    <p class="h4">Сахарный диабет и предиабет</p>
+                  </div>
+                  <p class="test-list__item-num txt20">02</p>
+                </div>
+
+                <p class="test-list__item-desk txt18">Узнайте свой риск сахарного диабета/предиабета (опросник FINDRISC)</p>
+              </div>
+              <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt=""></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="test-list__item">
+              <div class="test-list__item-content flex dc">
+                <div class="test-list__item-head flex sb">
+                  <div class="test-list__item-title flex">
+                    <div class="test-list__item-svg">
+                      <img src="./assets/images/test3.svg" alt="">
+                    </div>
+                    <p class="h4">Возрастное снижение половых гормонов</p>
+                  </div>
+                  <p class="test-list__item-num txt20">03</p>
+                </div>
+
+                <p class="test-list__item-desk txt18">
+                  Проверьте, есть ли у Вас признаки возрастного снижения тестостерона (для мужчин) (Опросник возрастных симптомов
+                  андрогенного дефицита мужчины AMS)
+                </p>
+              </div>
+              <div class="test-list__item-btn">
+                <img src="./assets/images/arr-link.svg" alt="">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="application">
+  <div class="application__bg">
+    <img src="./assets/images/applicationBg.webp" alt="">
+  </div>
+  <div class="application__container container">
+    <div class="application__inner flex dc">
+      <p class="application__title h2">онлайн запись</p>
+      <form class="application__form form flex dc" data-popup-message="#popup__success" data-dev="" action="">
+        <p class="form__title txt20">Заполните форму и я свяжусь с вами, чтобы помочь выбрать удобное время для консультации.</p>
+
+        <div class="form__content">
+          <div class="form__input-box flex dc">
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input class="input--name form__input txt20" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]" placeholder="Введите ваше имя">
+                <span class="form__placeholder txt16">Имя</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input class="input--tel phone-mask form__input txt20" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]" placeholder="+7 (9 _ _) _ _ _ - _ _ - _ _">
+
+                <span class="form__placeholder txt16">Номер телефона</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+            <label class="form__label">
+              <span class="form__label-inner">
+                <input class="input--mail form__input txt20" type="text" data-validate="" data-required="email" autocomplete="off" name="form[]" placeholder="Введите адрес электронной почты">
+                <span class="form__placeholder txt16">Электронная почта</span>
+              </span>
+              <span class="form__error txt16">Поле не заполнено</span>
+            </label>
+          </div>
+          <div class="form__btn-box">
+            <label class="form__check-label">
+              <input type="checkbox">
+              <span class="form__check-square"></span>
+              <span class="txt14 lh140 light tertiary-color">
+                Соглашаюсь на&nbsp;Обработку персональных данных и&nbsp;принимаю Условия
+                <a href="">политики конфиденциальности</a>
+              </span>
+            </label>
+
+            <button class="btn-arr btn-arr--black" disabled="" type="submit">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
       <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__inner"></div>
+    <div class="footer__inner flex dc">
+      <div class="footer__top flex cv sb">
+        <a href="" class="footer__logo logo blurBgHeader">Логотип</a>
+
+        <nav class="footer__nav">
+          <ul class="footer__list flex cv txt20">
+            <li>
+              <a href="#" class="footer__link">Мои услуги</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Обо мне</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Мой путь</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Образование</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Статьи</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socials flex cv">
+          <a href="tel:+74959693132" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/whatsapp.svg" alt="">
+            </div>
+          </a>
+          <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/telegram.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom flex-cc">
+        <p class="txt16">Сopyright 2025</p>
+      </div>
+    </div>
   </div>
 </footer>
 
 <div class="fancybox-bg"></div>
 <!-- cookie--show -->
-<div class="cookie cookie--show flex dc">
-  <p class="txt18 light">
+<div class="cookie  flex cv">
+  <p class="txt18">
     Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу с этими файлами.
   </p>
 
-  <button class="cookie__btn accent-btn">Принять и закрыть</button>
+  <button class="cookie__btn btn-primary btn-primary--black">Принять и закрыть</button>
 </div>
-
-
 
     </div>
   </body>
