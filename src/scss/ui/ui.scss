@@ -142,13 +142,12 @@
   }
   & .swiper-button-next,
   & .swiper-button-prev {
-    position: static !important;
+    position: relative !important;
+    inset: 0!important;
     margin: 0 !important;
     width: 65rem !important;
     height: 65rem !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     background: $black;
     transition: background 0.3s !important;
     opacity: 1 !important;
@@ -169,6 +168,10 @@
       height: 32rem !important;
       object-fit: cover;
       transition: transform 0.3s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @include small-tablet {
         width: 24rem !important;
         height: 24rem !important;

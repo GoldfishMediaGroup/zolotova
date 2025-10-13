@@ -1,0 +1,103 @@
+.error {
+  @include desk-only {
+    background: url(./assets/images/servicesBg.webp) no-repeat top/cover;
+    min-height: 890rem;
+    padding-top: 200rem;
+  }
+
+  /* .error__container */
+
+  &__container {
+  }
+
+  /* .error__inner */
+
+  &__inner {
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 24rem;
+    }
+  }
+
+  /* .error__content */
+
+  &__content {
+    gap: 32rem;
+  }
+
+  & .btn-arr {
+    @include small-tablet {
+      display: none;
+    }
+  }
+  /* .error__text */
+
+  &__text {
+    @include small-tablet {
+      gap: 16rem;
+    }
+  }
+
+  /* .error__num */
+
+  &__num {
+    font-weight: 500;
+    font-size: 260rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: -10rem;
+    font-family: 'Akzidenz';
+    @include small-tablet {
+      font-size: 120rem;
+      margin-bottom: 0rem;
+    }
+  }
+
+  /* .error__info */
+
+  &__info {
+    gap: 24rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  /* .error__title */
+
+  &__title {
+    font-weight: 500;
+    font-size: 44rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: 'Akzidenz';
+    @include small-tablet {
+      font-size: 28rem;
+    }
+  }
+
+  /* .error__btn */
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  /* .error__photo */
+
+  &__photo {
+    position: absolute;
+    width: 930rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @include small-tablet {
+      position: static;
+      border-radius: 11rem;
+      width: 335rem;
+      height: 377rem;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <section class="test _first">
+          <div class="test__container container">
+            <div class="test__inner flex dc">
+              <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list txt16">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Опросники</a></li>
+                  <li><p>Тестирование на наличие сахарного диабета 2 типа:</p></li>
+                </ul>
+              </nav>
+
+              <div class="test__content flex dc">
+                <div class="test__head flex dc">
+                  <p class="h1">Опросник для определения физической активности</p>
+                  <p class="txt20">
+                    Работаю в парадигме доказательной медицины с применением современных мировых подходов к диагностике и лечению
+                    <span class="bold">seo текст</span>
+                  </p>
+                </div>
+
+                <div class="test__wrap">
+                  <div class="quiz flex dc" data-critical="10" data-meaning="<">
+                    <div class="quiz__prog-box flex sb">
+                      <div class="quiz__prog-start txt18">
+                        <span>0%</span>
+                      </div>
+                      <div class="quiz__prog-wrapper">
+                        <div class="quiz__prog-bar">
+                          <div class="quiz__prog-track"></div>
+                        </div>
+
+                        <div class="quiz__prog-point">
+                          <div class="quiz__prog-point-svg">
+                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M1.05432 19.0693C5.48785 12.9246 3.62596 6.18608 1.38319 2.29696C0.967654 1.57638 1.46359 0.599609 2.2954 0.599609H12.9042C13.7832 0.599609 14.2655 1.68732 13.779 2.41938C9.96234 8.16215 12.0166 15.1631 14.2425 19.243C14.6287 19.9508 14.1358 20.8672 13.3295 20.8672H1.893C1.01278 20.8672 0.539284 19.7831 1.05432 19.0693Z"
+                                fill="#393C43"
+                              />
+                            </svg>
+                          </div>
+                          <p class="quiz__prog-point-num txt16">
+                            Вопрос
+                            <span>1</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="quiz__prog-end txt18 flex cv">
+                        <div class="quiz__prog-end-svg">
+                          <img src="./assets/images/quizEnd.svg" alt="" />
+                        </div>
+                        <span>100%</span>
+                      </div>
+                    </div>
+
+                    <div class="quiz__fieldsets">
+                      <fieldset class="quiz__fieldset isActive" data-question_id="0">
+                        <div class="quiz__fieldset-inner flex dc">
+                          <legend class="quiz__title flex dc">
+                            <span class="h4">Сколько раз в неделю Вы занимались интенсивной физической нагрузкой?</span>
+                            <p class="quiz__desc txt20">
+                              Индекс массы тела позволяет выявить наличие у Вас избыточного веса или ожирения. Вы можете
+                              подсчитать свой индекс массы тела сами:
+                              <br />
+                              <span class="bold">Вес ___ кг : (рост ___ м)² = ___ кг/м²</span>
+                            </p>
+                          </legend>
+
+                          <div class="quiz__options flex dc">
+                            <label class="quiz__label flex cv" data-mark="0">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>1</span></span>
+                              <span class="quiz__answer txt20">0 дней Длинный текста варианта ответа в 2 строки</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="1">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>2</span></span>
+                              <span class="quiz__answer txt20">1 день</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="2">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>3</span></span>
+                              <span class="quiz__answer txt20">2 дня</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="3">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>4</span></span>
+                              <span class="quiz__answer txt20">3 дня</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="4">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>5</span></span>
+                              <span class="quiz__answer txt20">4 дня</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="5">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>6</span></span>
+                              <span class="quiz__answer txt20">5 дней</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="6">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>7</span></span>
+                              <span class="quiz__answer txt20">6 дней</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="7">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>8</span></span>
+                              <span class="quiz__answer txt20">7 дней</span>
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <fieldset class="quiz__fieldset" data-question_id="1">
+                        <div class="quiz__fieldset-inner flex dc">
+                          <legend class="quiz__title flex dc">
+                            <span class="h4">Сколько обычно длится Ваша интенсивная физическая нагрузка?</span>
+                          </legend>
+
+                          <div class="quiz__options flex dc">
+                            <label class="quiz__label flex cv" data-mark="0">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>1</span></span>
+                              <span class="quiz__answer txt20">до 10 мин</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="1">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>2</span></span>
+                              <span class="quiz__answer txt20">10-20 мин</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="3">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>3</span></span>
+                              <span class="quiz__answer txt20">20-40 мин</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="5">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>4</span></span>
+                              <span class="quiz__answer txt20">40-60 мин</span>
+                            </label>
+                            <label class="quiz__label flex cv" data-mark="7">
+                              <input class="quiz__input" type="radio" name="periodicity" />
+                              <span class="quiz__num h4"><span>5</span></span>
+                              <span class="quiz__answer txt20">1 ч и более</span>
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <fieldset class="quiz__fieldset" data-question_id="2">
+                        <div class="quiz__fieldset-inner flex dc">
+                          <legend class="quiz__title flex dc">
+                            <span class="h4">Результаты тестирования:</span>
+                            <span class="txt20">
+                              Вы набрали
+                              <span class="quiz__result bold"></span>
+                            </span>
+                          </legend>
+
+                          <div class="quiz__explan flex dc">
+                            <p class="h4">Расшифровка:</p>
+                            <div class="quiz__explan-list flex dc txt20">
+                              <p class="quiz__explan-item">
+                                Если Вы набрали
+                                <span class="bold">менее 21 балла</span>
+                                , то у Вас наблюдается недостаток физической активности (гиподинамия).
+                              </p>
+                              <p class="quiz__explan-item">
+                                <span class="bold">21-28 баллов</span>
+                                - относительно недостаточная физическая активность.
+                              </p>
+                              <p class="quiz__explan-item">
+                                Если Вы набрали
+                                <span class="bold">28 и более баллов</span>
+                                , то Ваша физическая активность оптимальна.
+                              </p>
+                              <p class="quiz__explan-item">
+                                Гиподинамия - недостаток физической активности. Гиподинамия рассматривается как основной фактор
+                                риска развития сердечно-сосудистых заболеваний.
+                                <br />
+                                Продемонстрировано, что физические нагрузки снижают риск развития сердечно- сосудистых
+                                заболеваний. При этом профилактический эффект ходьбы сравним с таковым для других видов физической
+                                нагрузки.
+                                <br />
+                                Физические упражнения стимулируют опорно-двигательную систему и задерживают возрастной процесс
+                                разрежения костной массы.
+                                <br />
+                                Вне зависимости от своей интенсивности и продолжительности физические упражнения способствуют
+                                расходу энергии. Благодаря им легче, чем при помощи диеты, добиться отрицательного баланса
+                                энергии, т.е. способствовать контролю за массой тела. Также доказано, что люди с низкой физической
+                                активностью имеют большую вероятность повышения своего веса в ближайшие десять лет, чем ведущие
+                                активный образ жизни.
+                              </p>
+                            </div>
+                          </div>
+
+                          <button class="quiz__btn-arr btn-arr btn-arr--black" data-popup="#popup__application">
+                            <p class="btn-arr__text">записаться на прием</p>
+                            <div class="btn-arr__svg">
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  class="fill"
+                                  d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z"
+                                  fill="#393C43"
+                                />
+                                <path
+                                  class="stroke"
+                                  d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917"
+                                  stroke="#393C43"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="test__important flex">
+                    <div class="test__important-svg">
+                      <img src="./assets/images/important.svg" alt="" />
+                    </div>
+
+                    <p class="txt16">
+                      Ни один из опросников не может заменить консультацию врача и является инструментом скрининга и субъективной
+                      оценки вашего состояния.
+                      <br />
+                      <br />
+                      Многие симптомы эндокринных заболеваний неспецифичны и могут встречаться при различных состояниях, в том
+                      числе и не связанных с гормональными нарушениями, поэтому результаты тестов должны оцениваться
+                      врачом-эндокринологом в комплексе с данными других исследований.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

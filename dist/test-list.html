@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <title>Главная</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+  <div class="container">
+    <div class="header__inner flex cv sb">
+      <a href="" class="header__logo logo blurBgHeader">Логотип</a>
+      <div class="header__nav-wrapper" data-lenis-prevent="true">
+        <nav class="header__nav flex cv sb blurBgHeader">
+          <ul class="header__list flex cv sb txt20">
+            <li>
+              <a href="#" class="header__link">Мои услуги</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Обо мне</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Мой путь</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Образование</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Статьи</a>
+            </li>
+          </ul>
+
+          <div class="header__nav-btn-box">
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+
+            <div class="socials flex cv">
+              <a href="tel:+74959693132" class="socials__social blurBgHeader">
+                <div class="socials__social-svg">
+                  <img src="./assets/images/whatsapp.svg" alt="">
+                </div>
+              </a>
+              <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+                <div class="socials__social-svg">
+                  <img src="./assets/images/telegram.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header__btn-wrap flex cv">
+        <div class="socials flex cv">
+          <a href="tel:+74959693132" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/whatsapp.svg" alt="">
+            </div>
+          </a>
+          <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/telegram.svg" alt="">
+            </div>
+          </a>
+        </div>
+
+        <button class="btn-primary" data-popup="#popup__application">записаться на прием</button>
+
+        <button class="burger blurBgHeader">
+          <div class="burger__svg">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line class="opacity" x1="2.1748" y1="6.05005" x2="21.6748" y2="6.05005" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="left" x1="2.1748" y1="12.05" x2="21.6748" y2="12.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="right" x1="2.1748" y1="12.05" x2="21.6748" y2="12.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+              <line class="opacity" x1="2.1748" y1="18.05" x2="21.6748" y2="18.05" stroke="white" stroke-width="1.5" stroke-linecap="round"></line>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div id="popup__application" aria-hidden="true" class="popup popup--application" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-content flex dc">
+          <div class="popup__body-text flex dc">
+            <p class="h2">онлайн запись</p>
+          </div>
+          <form class="popup__form form flex dc" data-popup-message="#popup__success" data-dev="" action="">
+            <p class="form__title txt20">
+              Заполните форму и я свяжусь с вами, чтобы помочь выбрать удобное время для консультации.
+            </p>
+
+            <div class="form__content">
+              <div class="form__input-box flex dc">
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--name form__input txt20" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]" placeholder="Введите ваше имя">
+                    <span class="form__placeholder txt16">Имя</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--tel phone-mask form__input txt20" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]" placeholder="+7 (9 _ _) _ _ _ - _ _ - _ _">
+
+                    <span class="form__placeholder txt16">Номер телефона</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+                <label class="form__label">
+                  <span class="form__label-inner">
+                    <input class="input--mail form__input txt20" type="text" data-validate="" data-required="email" autocomplete="off" name="form[]" placeholder="Введите адрес электронной почты">
+                    <span class="form__placeholder txt16">Электронная почта</span>
+                  </span>
+                  <span class="form__error txt16">Поле не заполнено</span>
+                </label>
+              </div>
+              <div class="form__btn-box">
+                <label class="form__check-label">
+                  <input type="checkbox">
+                  <span class="form__check-square"></span>
+                  <span class="txt14 lh140 light tertiary-color">
+                    Соглашаюсь на&nbsp;Обработку персональных данных и&nbsp;принимаю Условия
+                    <a href="">политики конфиденциальности</a>
+                  </span>
+                </label>
+
+                <button class="btn-arr btn-arr--black" disabled="" type="submit">
+                  <p class="btn-arr__text">записаться на прием</p>
+                  <div class="btn-arr__svg">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                      <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success" aria-hidden="true" class="popup popup--success" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-content flex dc">
+          <div class="popup__body-text flex dc">
+            <p class="h2">заявка отправлена</p>
+            <p class="txt20">
+              Ваша заявка успешно отправлена.
+              <br>
+              Мы свяжемся с вами в ближайшее время.
+            </p>
+          </div>
+
+          <button class="btn-arr btn-arr--black" data-close="">
+            <p class="btn-arr__text">на главную</p>
+            <div class="btn-arr__svg">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__illness" aria-hidden="true" class="popup popup--illness" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex">
+          <div class="popup__body-img" data-da="#popup__illness .popup__body-content, 768, 1">
+            <img src="./assets/images/ill.webp" alt="">
+          </div>
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Заболевания щитовидной железы</p>
+              <p class="txt20">
+                Гипотиреоз, тиреотоксикоз, тиреоидиты, зоб, злокачественные
+                <br>
+                новообразования, ведение послеоперационных пациентов.
+              </p>
+            </div>
+
+            <button class="btn-arr btn-arr--black" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__illness-no-photo" aria-hidden="true" class="popup popup--illness" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex">
+          <!-- <div class="popup__body-img" data-da="#popup__illness-no-photo .popup__body-content, 768, 1">
+            <img src="./assets/images/ill.webp" alt="" />
+          </div> -->
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Заболевания щитовидной железы</p>
+              <p class="txt20">
+                Гипотиреоз, тиреотоксикоз, тиреоидиты, зоб, злокачественные
+                <br>
+                новообразования, ведение послеоперационных пациентов.
+              </p>
+            </div>
+
+            <button class="btn-arr btn-arr--black" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-online" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Консультация онлайн</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Подробное обсуждение жалоб и истории развития заболевания</li>
+                  <li class="popup__item">Изучение результатов ранее пройденных обследований (при их наличии)</li>
+                  <li class="popup__item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                  <li class="popup__item">Определение дальнейшего хода обследования и лечения</li>
+                </ul>
+              </div>
+
+              <div class="popup__important flex dc">
+                <p class="h4">Важно!</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Консультация проходит по видеосвязи</li>
+                  <li class="popup__item">Длительность 45-60 минут, в зависимости от сложности случая</li>
+                  <li class="popup__item">Все назначения носят рекомендательный характер</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+                3000 ₽
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-offline" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Консультация в клинике</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Подробное обсуждение жалоб, анамнеза, динамики состояния</li>
+                  <li class="popup__item">Изучение результатов ранее пройденных обследований</li>
+                  <li class="popup__item">Осмотр и оценка состава тела (биоимпедансометрия) по показаниям</li>
+                  <li class="popup__item">Разъяснение доступным языком вашей проблемы и путей её решения</li>
+                  <li class="popup__item">Назначение лечения&nbsp;</li>
+                </ul>
+              </div>
+
+              <div class="popup__important flex dc">
+                <p class="h4">Важно!</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Запись осуществляется заранее через сайт клиники</li>
+                  <li class="popup__item">Время приема регламентировано - 30 минут</li>
+                  <li class="popup__item">
+                    Возможность в Клинике сразу сдать анализы и пройти дообследование, в т. ч. у смежных специалистов
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+                2900/2700₽
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__consult-accompaniment" aria-hidden="true" class="popup popup--consultation" data-lenis-prevent="true">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body flex dc">
+        <button data-close="" type="button" class="popup__close-btn">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_6077)">
+              <path d="M31.9999 1.99951L1.99902 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M1.99902 1.99951L31.9999 32.0003" stroke="#393C43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_6077">
+                <rect width="34" height="34" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-info flex dc">
+          <div class="popup__body-content flex dc">
+            <div class="popup__body-text flex dc">
+              <p class="h3">Сопровождение по питанию</p>
+            </div>
+
+            <div class="popup__info-wrap flex dc">
+              <div class="popup__list-box flex dc">
+                <p class="txt20 semibold">Что входит:</p>
+                <ul class="popup__list txt20">
+                  <li class="popup__item">Изучение истории набора веса и связанных с этим аспектов</li>
+                  <li class="popup__item">Оценка пищевого поведения</li>
+                  <li class="popup__item">Определение целей и формата дальнейшей коммуникации</li>
+                  <li class="popup__item">Наблюдение и оценка характера питания 24/7</li>
+                  <li class="popup__item">Индивидуально составленные диетологические рекомендации</li>
+                  <li class="popup__item">Работа с целью и мотивацией, навязчивым аппетитом и эмоциогенным перееданием</li>
+                  <li class="popup__item">Разработка индивидуального рациона</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup__footer flex cv sb">
+            <div class="popup__price-box flex dc">
+              <p class="number">
+               5000 ₽/нед
+              </p>
+              <p class="txt16 gray">стоимость услуги</p>
+            </div>
+
+            <button class="btn-arr btn-arr--black btn-arr--short" data-popup="#popup__application">
+              <p class="btn-arr__text">записаться на прием</p>
+              <div class="btn-arr__svg">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill" d="M4.68612 14.9994L3.68612 14.9994L3.68612 16.9994L4.68612 16.9994L4.68612 15.9994L4.68612 14.9994ZM25.8993 16.9994C26.4516 16.9994 26.8993 16.5516 26.8993 15.9994C26.8993 15.4471 26.4516 14.9994 25.8993 14.9994L25.8993 15.9994L25.8993 16.9994ZM4.68612 15.9994L4.68612 16.9994H25.8993L25.8993 15.9994L25.8993 14.9994H4.68612L4.68612 15.9994Z" fill="#393C43"></path>
+                  <path class="stroke" d="M18.1212 6.80687L27.3135 15.9993L18.1212 25.1917" stroke="#393C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <main>
+        <section class="test-list _first">
+          <div class="test-list__container container">
+            <div class="test-list__inner flex dc">
+              <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list txt16">
+                  <li><a href="#">Главная</a></li>
+                  <li><p>Опросники</p></li>
+                </ul>
+              </nav>
+
+              <div class="test-list__content flex dc">
+                <div class="test-list__head flex dc">
+                  <p class="h1">Опросники</p>
+                  <p class="txt20">
+                    Работаю в парадигме доказательной медицины с применением современных мировых подходов к диагностике и лечению
+                    <span class="bold">seo текст</span>
+                  </p>
+                  <div class="test-list__important flex">
+                    <div class="test-list__important-svg">
+                      <img src="./assets/images/important.svg" alt="" />
+                    </div>
+
+                    <p class="txt16">
+                      Ни один из опросников не может заменить консультацию врача и является инструментом скрининга и субъективной
+                      оценки вашего состояния.
+                      <br />
+                      <br />
+                      Многие симптомы эндокринных заболеваний неспецифичны и могут встречаться при различных состояниях, в том
+                      числе и не связанных с гормональными нарушениями, поэтому результаты тестов должны оцениваться
+                      врачом-эндокринологом в комплексе с данными других исследований.
+                    </p>
+                  </div>
+                </div>
+                <div class="test-list__list-wrap flex dc">
+                  <ul class="test-list__list">
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test1.svg" alt="" />
+                              </div>
+                              <p class="h4">Лишний вес</p>
+                            </div>
+                            <p class="test-list__item-num txt20">01</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Определите ваши отношения с едой (Голландский опросник пищевого поведения DEBQ)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt="" /></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test2.svg" alt="" />
+                              </div>
+                              <p class="h4">Сахарный диабет и предиабет</p>
+                            </div>
+                            <p class="test-list__item-num txt20">02</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Узнайте свой риск сахарного диабета/предиабета (опросник FINDRISC)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn"><img src="./assets/images/arr-link.svg" alt="" /></div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="test-list__item">
+                        <div class="test-list__item-content flex dc">
+                          <div class="test-list__item-head flex sb">
+                            <div class="test-list__item-title flex">
+                              <div class="test-list__item-svg">
+                                <img src="./assets/images/test3.svg" alt="" />
+                              </div>
+                              <p class="h4">Возрастное снижение половых гормонов</p>
+                            </div>
+                            <p class="test-list__item-num txt20">03</p>
+                          </div>
+
+                          <p class="test-list__item-desk txt18">
+                            Проверьте, есть ли у Вас признаки возрастного снижения тестостерона (для мужчин) (Опросник возрастных
+                            симптомов андрогенного дефицита мужчины AMS)
+                          </p>
+                        </div>
+                        <div class="test-list__item-btn">
+                          <img src="./assets/images/arr-link.svg" alt="" />
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <button class="btn-primary">Показать ещё</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__inner flex dc">
+      <div class="footer__top flex cv sb">
+        <a href="" class="footer__logo logo blurBgHeader">Логотип</a>
+
+        <nav class="footer__nav">
+          <ul class="footer__list flex cv txt20">
+            <li>
+              <a href="#" class="footer__link">Мои услуги</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Обо мне</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Мой путь</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Образование</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Статьи</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socials flex cv">
+          <a href="tel:+74959693132" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/whatsapp.svg" alt="">
+            </div>
+          </a>
+          <a href="mailto:opt@rebelgroup.ru" class="socials__social blurBgHeader">
+            <div class="socials__social-svg">
+              <img src="./assets/images/telegram.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom flex-cc">
+        <p class="txt16">Сopyright 2025</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="fancybox-bg"></div>
+<!-- cookie--show -->
+<div class="cookie  flex cv">
+  <p class="txt18">
+    Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, Вы даете согласие на работу с этими файлами.
+  </p>
+
+  <button class="cookie__btn btn-primary btn-primary--black">Принять и закрыть</button>
+</div>
+
+    </div>
+  </body>
+</html>

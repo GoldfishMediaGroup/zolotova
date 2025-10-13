@@ -18,6 +18,11 @@ import hero from '../components/hero';
 import way from '../components/way';
 import services from '../components/services';
 import education from '../components/education';
+import cert from '../components/cert';
+import reviews from '../components/reviews';
+import showMoreMob from '../components/showMoreMob';
+import test from '../components/test';
+import otherArticles from '../components/otherArticles';
 
 import '../libs/dynamic_adapt';
 
@@ -42,4 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
   way();
   services();
   education();
+  cert();
+  reviews();
+  showMoreMob('.education__text', 114, '42rem', '.education__show-more');
+  test();
+  otherArticles();
 });

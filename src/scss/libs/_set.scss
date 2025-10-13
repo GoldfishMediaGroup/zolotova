@@ -30,7 +30,8 @@ iframe {
   pointer-events: fill !important;
 }
 input,
-textarea {
+textarea,
+fieldset {
   -webkit-animation: bugfix infinite 1s;
   line-height: inherit;
   margin: 0;

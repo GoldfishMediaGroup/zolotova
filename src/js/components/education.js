@@ -22,6 +22,8 @@ function education() {
       }
     }
   });
+
+
 }
 
 export default education;

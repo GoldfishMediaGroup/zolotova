@@ -1,0 +1,147 @@
+.articles-info {
+  /* .articles-info__container */
+
+  &__container {
+  }
+
+  /* .articles-info__inner */
+
+  &__inner {
+    gap: 20rem;
+    @include small-tablet {
+      gap: 12rem;
+    }
+    & h2 {
+      font-weight: 500;
+      font-size: 60rem;
+      line-height: 100%;
+      text-transform: uppercase;
+      font-family: 'Akzidenz';
+
+      @include small-tablet {
+        font-size: 40px;
+      }
+    }
+  }
+
+  /* .articles-info__toc */
+
+  &__toc,
+  &__bibliography,
+  &__desc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 32rem;
+    padding: 52rem;
+    background: $white;
+    border-radius: 16rem;
+    & > *:not(h2) {
+      grid-column: 2/3;
+    }
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      padding: 20rem 12rem;
+      & h2 {
+        margin-bottom: 16rem;
+        &:not(:first-of-type) {
+          margin-top: 32rem;
+        }
+      }
+    }
+  }
+
+  &__toc {
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24rem;
+      @include small-tablet {
+        gap: 16rem;
+      }
+      & a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__desc {
+    & h2:not(:first-of-type) + *,
+    & h2 {
+      margin-top: 40rem;
+      @include small-tablet {
+        margin-top: 0;
+      }
+    }
+
+    & figure {
+      margin: 24rem 0 !important;
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      @include small-tablet {
+        margin: 12rem 0 !important;
+      }
+      & a {
+        position: relative;
+        @include small-tablet {
+          border-radius: 12rem;
+          overflow: hidden;
+        }
+        &::before,
+        &::after {
+          position: absolute;
+          content: '';
+          width: 65rem;
+          height: 65rem;
+          border-radius: 50%;
+          top: 16rem;
+          right: 16rem;
+
+          @include small-tablet {
+            width: 52rem;
+            height: 52rem;
+            top: 8rem;
+            right: 8rem;
+          }
+        }
+        &::before {
+          background: $gray;
+        }
+        &::after {
+          background: url("data:image/svg+xml;utf8,<svg width='52' height='53' viewBox='0 0 52 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(%23clip0_365_8012)'><path d='M25.6992 33.8052C30.1175 33.8052 33.6992 30.2235 33.6992 25.8052C33.6992 21.3869 30.1175 17.8052 25.6992 17.8052C21.2809 17.8052 17.6992 21.3869 17.6992 25.8052C17.6992 30.2235 21.2809 33.8052 25.6992 33.8052Z' stroke='%23393C43' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M35.7002 35.8052L31.3502 31.4552M25.7002 22.8052V28.8052M22.7002 25.8052H28.7002' stroke='%23393C43' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></g><defs><clipPath id='clip0_365_8012'><rect width='24' height='24' fill='white' transform='translate(14.5 14.8052)'/></clipPath></defs></svg>")
+            no-repeat center / contain;
+          transition: scale 0.3s;
+        }
+        &:hover {
+          &::after {
+            scale: 1.1;
+          }
+        }
+      }
+      & img {
+      }
+      & figcaption {
+        color: $gray-txt;
+      }
+    }
+  }
+
+  &__bibliography {
+    & ol {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      margin: 0;
+      padding: 0;
+      padding-left: 25rem;
+      @include small-tablet {
+        gap: 8rem; padding-left: 20rem;
+      }
+      & a {
+        text-decoration: underline;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
