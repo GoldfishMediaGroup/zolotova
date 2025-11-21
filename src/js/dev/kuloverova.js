@@ -23,6 +23,7 @@ import reviews from '../components/reviews';
 import showMoreMob from '../components/showMoreMob';
 import test from '../components/test';
 import otherArticles from '../components/otherArticles';
+import headerScroll from '../components/headerScroll';
 
 import '../libs/dynamic_adapt';
 
@@ -52,4 +53,5 @@ document.addEventListener('DOMContentLoaded', () => {
   showMoreMob('.education__text', 114, '42rem', '.education__show-more');
   test();
   otherArticles();
+  headerScroll()
 });

@@ -18,6 +18,10 @@
     padding: 0 8rem;
     // top: 20rem;
     top: 16rem;
+    transition: top 0.3s;
+    &.fixed-nav {
+      top: 8rem
+    }
     
   }
   /* .header__inner */
