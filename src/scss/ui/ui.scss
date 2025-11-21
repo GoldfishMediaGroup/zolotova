@@ -27,7 +27,7 @@
 
   @include small-tablet {
     width: 140rem;
-    height: 52rem;
+    height: 44rem;
     font-size: 26rem;
   }
 }
@@ -49,8 +49,8 @@
     justify-content: center;
     flex-shrink: 0;
     @include small-tablet {
-      width: 52rem;
-      height: 52rem;
+      width: 44rem;
+      height: 44rem;
     }
   }
 

@@ -16,7 +16,8 @@
   width: 100%;
   @include small-tablet {
     padding: 0 8rem;
-    top: 20rem;
+    // top: 20rem;
+    top: 16rem;
   }
   /* .header__inner */
 
@@ -113,6 +114,8 @@
       gap: 24rem;
         & .socials__social {
           background: $black !important;
+          width: 52rem;
+          height: 52rem;
         }
     }
   }
@@ -141,8 +144,8 @@
     display: none;
   }
   @include small-tablet {
-    width: 52rem;
-    height: 52rem;
+    width: 44rem;
+    height: 44rem;
     display: flex;
     align-items: center;
     justify-content: center;
